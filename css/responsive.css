@@ -1,0 +1,26 @@
+@media screen and (max-width:1600px) {
+  /* common */
+  .inner-02{width:calc(100% - 200px);}
+}
+@media screen and (max-width:1400px) {
+  /* main */
+  .partnerBox .partnerUl li{width:20%;}
+  .partnerBox .partnerUl li img{width:100%;}
+}
+@media screen and (max-width:1200px) {
+  /* common */
+  .inner-02{width:calc(100% - 120px);}
+  /* main */
+  .section4 .title{width:100%;}
+  .contactBox{width:100%;}
+}
+@media screen and (max-width:768px) {
+  /* common */
+  .inner-02{width:calc(100% - 80px);}
+  #header .gnb{display: none;}
+  #footer .inner-02{display: none;}
+  /* main */
+  .section3 .partnerBox{display: none;}
+  .section3 .inner-02{padding-bottom:0;}
+  .section3 .loop-wrap{display: block;}
+}

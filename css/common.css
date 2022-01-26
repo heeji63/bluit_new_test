@@ -1,0 +1,56 @@
+@import "style.css";
+/* common */
+*::selection{background-color:rgba(82,195,241,0.5);}
+.clearfix::after{content:"";display:block;clear: both;}
+body{overflow-x: hidden;}
+.inner-01{width:90%;max-width: 1800px;margin: 0 auto;}
+.inner-02{max-width: 1400px;margin: 0 auto;padding:150px 0 100px;}
+.title{margin:0 0 80px;}
+.title h2{font-size: 48px;text-align: center;font-weight: 600;}
+.title p.sub{font-size: 18px;text-align: center;margin-top:25px;}
+.btnWrap{text-align: center;}
+.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;}
+.btn.orange{background: #FF4900;}
+/* header */
+#header{width:100%;position: fixed;top:0;left:0;z-index: 999;padding:40px 0 0;background: linear-gradient(rgba(0,0,0,1), 15%, transparent);transition: padding 0.3s ease;}
+#header .inner-01{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
+#header .logo{width:65px;}
+#header .logo a{display: block;width:65px;height:50px;background: url("../images/logo.png") no-repeat 0 0;text-indent: -9999px;transition: background 0.3s ease;}
+#header .gnb .gnb-ul{display: flex;flex-wrap: wrap;}
+#header .gnb .gnb-ul li{margin: 0 20px;}
+#header .gnb .gnb-ul li a{font-size: 24px;}
+#header .btn-wrap{display: flex;flex-wrap: wrap;align-items: center;}
+#header .inquiry{font-size: 18px;display: block;margin: -2px 20px 0 0;}
+/*가운데서 좌우로 펼쳐지는 라인 에니메이션*/
+.spread-underline {text-decoration: none;display: inline-block;padding: 5px 0;position: relative;}
+.spread-underline:after {background: none repeat scroll 0 0 transparent;bottom: 0;content: "";display: block;height: 2px;left: 50%;position: absolute;background: #fff;transition: width 0.3s ease 0s, left 0.3s ease 0s;width: 0;}
+.spread-underline:hover:after {width: 100%;left: 0;}
+/*가운데서 좌우로 펼쳐지는 라인 에니메이션:끝*/
+#header #allMenu{width:50px;height:50px;background: none;border:none;position: relative;cursor: pointer;}
+#header #allMenu .btn-line{display: block;width:40px;height:2px;background: #fff;position: absolute;top:12px;left:50%;margin-left: -20px;transition: top 0.3s ease;}
+#header #allMenu span:nth-child(2).btn-line{top:24px;}
+#header #allMenu .btn-line.short{width:25px;height:2px;background: #fff;top:36px;transition: top 0.3s ease;}
+#header #allMenu:hover .btn-line, #header #allMenu:hover .btn-line.short{top:24px;}
+/* 문의하기 버튼/ 상단으로 이동 버튼 */
+#header .btnMain{display: inline-block;width:60px;height:60px;font-size: 0;padding:0;border:none;background: none;text-align: center;cursor: pointer;position: fixed;right:5%;bottom:40px;}
+#header a.btnMain{bottom:110px;}
+#header .btnMain img{margin: -10px 0 0 -15px;}
+/* header on */
+#header.on{background: #fff;padding:15px 0;color:#000;box-shadow: 0 0 15px rgba(0,0,0,0.16);}
+#header.on .logo a{background: url("../images/logo_color.png") no-repeat 0 0;}
+#header.on #allMenu .btn-line{background: #000;}
+#header.on #allMenu .btn-line.short{background: #000;}
+#header.on .spread-underline:after{background: #000;}
+/* #header.on{background: #0E172B;padding:15px 0;border-bottom: 1px solid #576583;} */
+/* footer */
+#footer{background: #000;}
+#footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}
+#footer h6{font-size:24px;text-align: center;}
+#footer .profile .company-dw-btn{display: block;text-align: center;margin-top: 40px;}
+#footer .profile .company-dw-btn p{margin-top: 30px;font-size: 18px;}
+#footer .info .txt{font-size: 18px;line-height: 1.4;}
+#footer .info .txt .address{margin-top:35px;}
+#footer .info .txt .address span{font-weight: 500;}
+#footer .contact .number{font-size: 36px;color:#38B8EF;margin: 25px 0 15px;font-weight: 500;}
+#footer .contact p{line-height: 1.4;}
+#footer .copyright{background: #0E172B;text-align: center;padding:40px 0 38px;}
