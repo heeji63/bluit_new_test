@@ -38,6 +38,39 @@ $(document).ready(function() {
         // console.log(this.activeIndex);
           var active = this.activeIndex;
           var txtShowNum = active-1;
+          if(active > 5){
+            txtShowNum = 0;
+          }
+          // console.log(txtShowNum);
+          $(".portfolioTxt").find("li").hide();
+          $(".portfolioTxt").find("li").eq(txtShowNum).fadeIn(200);
+          $(".portfolioTxt li").removeClass("on");
+          $(".portfolioTxt li:eq("+txtShowNum+")").addClass("on");
+          $(".portfolioTxt li").find(".highlighter").removeClass("on");
+          $(".portfolioTxt li:eq("+txtShowNum+")").find(".highlighter").addClass("on");
+
+      }
+    }
+  });
+  var swiper = new Swiper(".mainSlider2", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction:false,
+    },
+    effect: "fade",
+    speed:500,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-nextM",
+      prevEl: ".swiper-button-prevM",
+    },
+    on: {
+      slideChangeTransitionEnd : function(){
+        // console.log(this.activeIndex);
+          var active = this.activeIndex;
+          var txtShowNum = active-1;
           if(active > 2){
             txtShowNum = 0;
           }
@@ -53,34 +86,49 @@ $(document).ready(function() {
     }
   });
   // Scroll Animation (sa, 스크롤 애니메이션)
-  var hiTriggerMargin = 300;
-  var hiElementList = document.querySelectorAll('.main-cont');
+  var hiTriggerMargin = 250;
+  var hiElementList = document.querySelectorAll('.workWrap li');
   var saFunc = function() {
     $.each(hiElementList, function(idx, element){
       if (!element.classList.contains('on')) {
         if (window.innerHeight > element.getBoundingClientRect().top + hiTriggerMargin) {
           element.classList.add('on');
-          if($('.workWrap li').closest('.main-cont').hasClass('on')){
+          if($('.workWrap li').hasClass('on')){
             // var newsNum = $('.workWrap li').length();
             var newsNum = $('.workWrap li').toArray();
             // console.log(newsNum);
             let count = 0;
             for(let i=0; i < newsNum.length; i++) {
-              // if(newsNum === '0')  {
-              //   $( '.workWrap li' ).eq(count).animate( {
-              //     opacity: '1',
-              //     top:0
-              //   }, 300);
-              //   count++;
-              // }
-              $( '.workWrap > li' ).eq(count).delay(count*250).animate( {
-                opacity: '1',
-                top:0
-              }, 350);
+              if($(window).width()>1000){
+                if(count<3){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay",count*0.25 + "s");
+                }else if(count==3 || count==6){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
+                }else if(count==4 || count==7){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay","0.25s");
+                }else if(count==5 || count==8){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay","0.5s");
+                }
+              }else if($(window).width()>768){
+                if(count<2){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay",count*0.25 + "s");
+                }else if(count==2){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
+                }else if(count==3){
+                  $( '.workWrap > li' ).eq(count).css("transition-delay","0.25s");
+                }
+              }else{
+                $( '.workWrap > li' ).eq(count).css("transition-delay",count*0.25 + "s");
+              }
+
               count++;
             }
             // document.write(count);
           }
+        }
+      }else if (element.classList.contains('on')){
+        if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin){
+          element.classList.remove('on');
         }
       }
     });

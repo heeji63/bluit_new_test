@@ -33,7 +33,7 @@
        url(../fonts/AppleSDGothicNeoB.ttf) format('truetype');
 }
 html,body {position: relative;font-family:'AppleSD', sans-serif;color:#fff;font-weight: 400;background: #0E172B;}
-body {font-family:'AppleSD', sans-serif;}
+button {font-family:'AppleSD', sans-serif; color:#fff;}
 input {font-family: 'AppleSD', sans-serif;-webkit-appearance: none;-webkit-border-radius:0;}
 label, select {font-family: 'AppleSD', sans-serif;}
 textarea {font-family: 'AppleSD', sans-serif;-webkit-appearance: none;}

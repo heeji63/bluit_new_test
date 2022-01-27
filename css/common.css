@@ -7,10 +7,14 @@ body{overflow-x: hidden;}
 .inner-02{max-width: 1400px;margin: 0 auto;padding:150px 0 100px;}
 .title{margin:0 0 80px;}
 .title h2{font-size: 48px;text-align: center;font-weight: 600;}
-.title p.sub{font-size: 18px;text-align: center;margin-top:25px;}
+.title p.sub{font-size: 18px;text-align: center;margin-top:25px;line-height: 1.4;}
+.title p.sub br{display: none;}
 .btnWrap{text-align: center;}
-.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;}
+.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;}
 .btn.orange{background: #FF4900;}
+.btn.skyblue{background: #38B8EF;}
+.btn.btnSend{width:100%;border-radius: 0;padding:17px 0 15px;font-size: 14px;font-weight: 600;letter-spacing: 4px;position: relative;}
+.btn.btnSend span{vertical-align: middle;font-size: 18px;position: absolute;}
 /* header */
 #header{width:100%;position: fixed;top:0;left:0;z-index: 999;padding:40px 0 0;background: linear-gradient(rgba(0,0,0,1), 15%, transparent);transition: padding 0.3s ease;}
 #header .inner-01{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
