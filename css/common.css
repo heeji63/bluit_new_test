@@ -45,7 +45,7 @@ body{overflow-x: hidden;}
 #header.on #allMenu .btn-line{background: #000;}
 #header.on #allMenu .btn-line.short{background: #000;}
 #header.on .spread-underline:after{background: #000;} */
-#header.on{background: #0E172B;padding:15px 0;border-bottom: 1px solid #576583;}
+#header.on{background: #0E172B;padding:15px 0;/*border-bottom: 1px solid #576583;*/}
 /* footer */
 #footer{background: #000;}
 #footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}
