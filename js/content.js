@@ -14,9 +14,27 @@ $(document).ready(function() {
     $("#header").removeClass('on narrow');
   }
 
-  $('.workWrap').isotope({
-    itemSelector: '.grid-item',
-  });
+  // $('.workWrap').isotope({
+  //   itemSelector: '.grid-item',
+  // });
+  //masonry
+    var grid = $('.workWrap').masonry({
+      // options
+        // columnWidth: '.workWrap',
+        itemSelector: '.grid-item',
+        percentPosition: true,
+    });
+
+    // layout Masonry after each image loads
+        grid.imagesLoaded().progress( function() {
+          grid.masonry('layout');
+        });
+
+    // init Isotope
+    var grid = $('.workWrap').isotope({
+        itemSelector: '.grid-item'
+        });
+
 
   $('.tab-ul li').on( 'click', 'a', function() {
     event.preventDefault();
@@ -42,32 +60,15 @@ $(document).ready(function() {
             // console.log(newsNum);
             let count = 0;
             for(let i=0; i < newsNum.length; i++) {
-              if($(window).width()>1000){
-                if(count%3==0){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
-                }else if(count%3==1){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay","0.25s");
-                }else if(count%3==2){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay","0.5s");
-                }
-              }else if($(window).width()>768){
-                if(count%2==0){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
-                }else if(count%2==1){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay","0.25s");
-                }
-              }else{
-                $( '.workWrap > li' ).eq(count).css("transition-delay",count*0.25 + "s");
-              }
-
+              $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
               count++;
             }
             // document.write(count);
           }
-        }
-      }else if (element.classList.contains('on')){
-        if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin){
-          element.classList.remove('on');
+        }else if (element.classList.contains('on')){
+          if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin){
+            element.classList.remove('on');
+          }
         }
       }
     });

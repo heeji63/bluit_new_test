@@ -4,11 +4,11 @@
 .workTab .tab-ul{display: flex;max-width:505px;margin: 0 auto;flex-wrap: wrap;justify-content: space-between;}
 .workTab .tab-ul li{font-size: 18px;}
 .workTab .tab-ul li.on{color: #FF4900;}
-.workWrap{width:calc(100% + 50px);margin-bottom: 30px;display: flex;flex-wrap: wrap;justify-content: space-between;}
-.workWrap li{width:calc(33.3333% - 50px);overflow: hidden;margin: 25px;position: relative;/* opacity: 0;top:-20px;transition: opacity 0.3s ease, top 0.3s ease; */}
-/* .workWrap li.on{opacity: 1;top:0;} */
-.workWrap li a{display: block;}
-.workWrap li .infoTxt{background: rgba(56, 184, 239,0.95);position: absolute;top:0;left:0;z-index: 10;width:100%;height:100%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0;transition: opacity 0.3s ease;}
+.workWrap{width:calc(100% + 50px);margin:0 0 30px -25px;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.workWrap li{width:33.3333%;overflow: hidden;padding: 25px;position: relative;opacity: 0;transition: opacity 0.3s ease;}
+.workWrap li.on{opacity: 1;}
+.workWrap li a{display: block;overflow: hidden;}
+.workWrap li .infoTxt{background: rgba(56, 184, 239,0.95);position: absolute;top:25px;left:25px;z-index: 10;width:calc(100% - 50px);height:calc(100% - 50px);text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0;transition: opacity 0.3s ease;}
 .workWrap li a:hover .infoTxt{opacity: 1;}
 .workWrap .infoTxt .verticalCenter{padding:0 40px;}
 .workWrap .infoTxt h4{font-size:22px;font-weight: 600;line-height: 1.3;}

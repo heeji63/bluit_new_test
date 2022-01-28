@@ -3,7 +3,7 @@
 *::selection{background-color:rgba(82,195,241,0.5);}
 .clearfix::after{content:"";display:block;clear: both;}
 body{overflow-x: hidden;}
-.inner-01{width:90%;max-width: 1800px;margin: 0 auto;}
+.inner-01{width:calc(100% - 80px);margin: 0 auto;}
 .inner-02{max-width: 1400px;margin: 0 auto;padding:150px 0 100px;}
 .title{margin:0 0 80px;}
 .title h2{font-size: 48px;text-align: center;font-weight: 600;}
@@ -43,7 +43,7 @@ body{overflow-x: hidden;}
 #header a.btnMain{bottom:110px;}
 #header .btnMain img{margin: -10px 0 0 -15px;}
 /* header on */
-#header.on{/*background: rgba(14,23,43,0.5);*/background: linear-gradient(rgba(14,23,43,0.55), 80%, transparent);padding:15px 0;/*border-bottom: 1px solid #576583;*/}
+#header.on{/*background: rgba(14,23,43,0.5);*/background: linear-gradient(rgba(14,23,43,0.55), 80%, transparent);padding:20px 0;/*border-bottom: 1px solid #576583;*/}
 /* footer */
 #footer{background: #000;}
 #footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}
