@@ -22,12 +22,6 @@
 #portfolioSlider2{display: none;}
 #portfolioSlider2 .swiper-slide{font-size: 0;}
 #portfolioSlider2 .swiper-slide img{width:100%;}
-.swiper-btn_m{display: none;}
-.swiper-button-nextM, .swiper-button-prevM {position: absolute;top: 50%;width: calc(var(--swiper-navigation-size)/ 44 * 27);height: var(--swiper-navigation-size);margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));z-index: 10;cursor: pointer;display: flex;align-items: center;justify-content: center;color: var(--swiper-navigation-color,var(--swiper-theme-color));}
-.section1 .swiper-button-prevM{width:80px;height:80px;top:auto;bottom:100px;left:50%;margin-left: -84.5px;}
-.section1 .swiper-button-prevM::after{content:'';display: block;width:80px;height:80px;background: url('../images/main/btn_prev.png') no-repeat 0 0;background-size: cover;}
-.section1 .swiper-button-nextM{width:80px;height:80px;top:auto;bottom:100px;right:auto;left:50%;margin-left: 15.5px;}
-.section1 .swiper-button-nextM::after{content:'';display: block;width:80px;height:80px;background: url('../images/main/btn_next.png') no-repeat 0 0;background-size: cover;}
 /* section2 */
 .workWrap{margin-bottom: 30px;display: flex;flex-wrap: wrap;justify-content: space-between;}
 .workWrap li{width:calc(33.3333% - 33.3333px);overflow: hidden;margin-bottom: 50px;position: relative;opacity: 0;top:-20px;transition: opacity 0.3s ease, top 0.3s ease;}
@@ -45,8 +39,8 @@
 .workWrap li a:hover img{transform: scale(1.1);}
 /* section3 */
 .partnerBox .partnerUl{display: flex;flex-wrap: wrap;}
-.partnerBox .partnerUl li{width:16.6666%;}
-.partnerBox .partnerUl li img{opacity: 0.5;width:100%;}
+.partnerBox .partnerUl li{width:16.6666%;text-align: center;}
+.partnerBox .partnerUl li img{opacity: 0.5;width:90%;}
 .section3 .loop-wrap{width: 100%;overflow: hidden;margin: 80px 0;transform: translate3d(0px, 0px, 0px);display: none;}
 .section3 .loop-wrap .loop-box{width:6600px;display: flex;flex-wrap: nowrap;animation-name: bannerLoop;animation-duration: 50s;animation-timing-function: linear;animation-iteration-count: infinite;}
 .section3 .loop-wrap .loop-box .ioop-items{width:220px;flex:0 0 220px;margin:0 20px;text-align: center;}

@@ -3,6 +3,28 @@
   font-family: 'AppleSD';
   font-style: normal;
   font-weight: 100;
+  src: local('AppleSDGothicNeoT'), local('AppleSDGothicNeoT'), local('AppleSDGothicNeoT');
+  src: url(../fonts/AppleSDGothicNeoT.eot);
+  src: url(../fonts/AppleSDGothicNeoT.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/AppleSDGothicNeoT.woff) format('woff'),
+       url(../fonts/AppleSDGothicNeoT.woff2) format('woff2'),
+       url(../fonts/AppleSDGothicNeoT.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'AppleSD';
+  font-style: normal;
+  font-weight: 200;
+  src: local('AppleSDGothicNeoUL'), local('AppleSDGothicNeoUL'), local('AppleSDGothicNeoUL');
+  src: url(../fonts/AppleSDGothicNeoUL.eot);
+  src: url(../fonts/AppleSDGothicNeoUL.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/AppleSDGothicNeoUL.woff) format('woff'),
+       url(../fonts/AppleSDGothicNeoUL.woff2) format('woff2'),
+       url(../fonts/AppleSDGothicNeoUL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'AppleSD';
+  font-style: normal;
+  font-weight: 300;
   src: local('AppleSDGothicNeoL'), local('AppleSDGothicNeoL'), local('AppleSDGothicNeoL');
   src: url(../fonts/AppleSDGothicNeoL.eot);
   src: url(../fonts/AppleSDGothicNeoL.eot?#iefix) format('embedded-opentype'),
@@ -24,13 +46,57 @@
 @font-face {
   font-family: 'AppleSD';
   font-style: normal;
+  font-weight: 500;
+  src: local('AppleSDGothicNeoM'), local('AppleSDGothicNeoM'), local('AppleSDGothicNeoM');
+  src: url(../fonts/AppleSDGothicNeoM.eot);
+  src: url(../fonts/AppleSDGothicNeoM.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/AppleSDGothicNeoM.woff) format('woff'),
+       url(../fonts/AppleSDGothicNeoM.woff2) format('woff2'),
+       url(../fonts/AppleSDGothicNeoM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'AppleSD';
+  font-style: normal;
   font-weight: 600;
+  src: local('AppleSDGothicNeoSB'), local('AppleSDGothicNeoSB'), local('AppleSDGothicNeoSB');
+  src: url(../fonts/AppleSDGothicNeoSB.eot);
+  src: url(../fonts/AppleSDGothicNeoSB.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/AppleSDGothicNeoSB.woff) format('woff'),
+       url(../fonts/AppleSDGothicNeoSB.woff2) format('woff2'),
+       url(../fonts/AppleSDGothicNeoSB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'AppleSD';
+  font-style: normal;
+  font-weight: 700;
   src: local('AppleSDGothicNeoB'), local('AppleSDGothicNeoB'), local('AppleSDGothicNeoB');
   src: url(../fonts/AppleSDGothicNeoB.eot);
   src: url(../fonts/AppleSDGothicNeoB.eot?#iefix) format('embedded-opentype'),
        url(../fonts/AppleSDGothicNeoB.woff) format('woff'),
        url(../fonts/AppleSDGothicNeoB.woff2) format('woff2'),
        url(../fonts/AppleSDGothicNeoB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'AppleSD';
+  font-style: normal;
+  font-weight: 800;
+  src: local('AppleSDGothicNeoEB'), local('AppleSDGothicNeoEB'), local('AppleSDGothicNeoEB');
+  src: url(../fonts/AppleSDGothicNeoEB.eot);
+  src: url(../fonts/AppleSDGothicNeoEB.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/AppleSDGothicNeoEB.woff) format('woff'),
+       url(../fonts/AppleSDGothicNeoEB.woff2) format('woff2'),
+       url(../fonts/AppleSDGothicNeoEB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'AppleSD';
+  font-style: normal;
+  font-weight: 900;
+  src: local('AppleSDGothicNeoH'), local('AppleSDGothicNeoH'), local('AppleSDGothicNeoH');
+  src: url(../fonts/AppleSDGothicNeoH.eot);
+  src: url(../fonts/AppleSDGothicNeoH.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/AppleSDGothicNeoH.woff) format('woff'),
+       url(../fonts/AppleSDGothicNeoH.woff2) format('woff2'),
+       url(../fonts/AppleSDGothicNeoH.ttf) format('truetype');
 }
 html,body {position: relative;font-family:'AppleSD', sans-serif;color:#fff;font-weight: 400;background: #0E172B;}
 button {font-family:'AppleSD', sans-serif; color:#fff;}

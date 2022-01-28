@@ -1,0 +1,20 @@
+/* work */
+.content .inner-02{padding:200px 0 70px;font-weight: 300;}
+.workTab{margin: -30px 0 90px;}
+.workTab .tab-ul{display: flex;max-width:505px;margin: 0 auto;flex-wrap: wrap;justify-content: space-between;}
+.workTab .tab-ul li{font-size: 18px;}
+.workTab .tab-ul li.on{color: #FF4900;}
+.workWrap{width:calc(100% + 50px);margin-bottom: 30px;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.workWrap li{width:calc(33.3333% - 50px);overflow: hidden;margin: 25px;position: relative;/* opacity: 0;top:-20px;transition: opacity 0.3s ease, top 0.3s ease; */}
+/* .workWrap li.on{opacity: 1;top:0;} */
+.workWrap li a{display: block;}
+.workWrap li .infoTxt{background: rgba(56, 184, 239,0.95);position: absolute;top:0;left:0;z-index: 10;width:100%;height:100%;text-align: center;display: flex;align-items: center;justify-content: center;opacity: 0;transition: opacity 0.3s ease;}
+.workWrap li a:hover .infoTxt{opacity: 1;}
+.workWrap .infoTxt .verticalCenter{padding:0 40px;}
+.workWrap .infoTxt h4{font-size:22px;font-weight: 600;line-height: 1.3;}
+.workWrap .infoTxt .dev_lang{font-size:15px;font-weight: 200;margin-top:10px;}
+.workWrap .infoTxt .disc{font-size:18px;font-weight: 200;margin:50px 0 20px;line-height: 1.7;}
+.workWrap .infoTxt .disc br{display: none;}
+.workWrap .infoTxt span{font-size: 30px;}
+.workWrap li img {display: block; min-width:100%; max-width: 100%;transition: transform 0.4s ease;}
+.workWrap li a:hover img{transform: scale(1.1);}

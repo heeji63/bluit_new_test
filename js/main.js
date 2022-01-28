@@ -33,6 +33,9 @@ $(document).ready(function() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    controller: {
+      control: swiper2
+    },
     on: {
       slideChangeTransitionEnd : function(){
         // console.log(this.activeIndex);
@@ -52,7 +55,7 @@ $(document).ready(function() {
       }
     }
   });
-  var swiper = new Swiper(".mainSlider2", {
+  var swiper2 = new Swiper(".mainSlider2", {
     loop: true,
     autoplay: {
       delay: 5000,
@@ -63,8 +66,11 @@ $(document).ready(function() {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {
-      nextEl: ".swiper-button-nextM",
-      prevEl: ".swiper-button-prevM",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    controller: {
+      control: swiper
     },
     on: {
       slideChangeTransitionEnd : function(){
@@ -85,6 +91,8 @@ $(document).ready(function() {
       }
     }
   });
+  swiper.controller.control = swiper2;
+  swiper2.controller.control = swiper;
   // Scroll Animation (sa, 스크롤 애니메이션)
   var hiTriggerMargin = 250;
   var hiElementList = document.querySelectorAll('.workWrap li');
@@ -100,21 +108,17 @@ $(document).ready(function() {
             let count = 0;
             for(let i=0; i < newsNum.length; i++) {
               if($(window).width()>1000){
-                if(count<3){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay",count*0.25 + "s");
-                }else if(count==3 || count==6){
+                if(count%3==0){
                   $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
-                }else if(count==4 || count==7){
+                }else if(count%3==1){
                   $( '.workWrap > li' ).eq(count).css("transition-delay","0.25s");
-                }else if(count==5 || count==8){
+                }else if(count%3==2){
                   $( '.workWrap > li' ).eq(count).css("transition-delay","0.5s");
                 }
               }else if($(window).width()>768){
-                if(count<2){
-                  $( '.workWrap > li' ).eq(count).css("transition-delay",count*0.25 + "s");
-                }else if(count==2){
+                if(count%2==0){
                   $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
-                }else if(count==3){
+                }else if(count%2==1){
                   $( '.workWrap > li' ).eq(count).css("transition-delay","0.25s");
                 }
               }else{
