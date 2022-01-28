@@ -65,10 +65,10 @@ $(document).ready(function() {
             }
             // document.write(count);
           }
-        }else if (element.classList.contains('on')){
-          if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin){
-            element.classList.remove('on');
-          }
+        }
+      }else if (element.classList.contains('on')){
+        if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin){
+          element.classList.remove('on');
         }
       }
     });
