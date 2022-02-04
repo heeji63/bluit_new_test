@@ -19,7 +19,7 @@ $(document).ready(function() {
   }else{
     $("#header").removeClass('on narrow');
   }
-  var swiper = new Swiper(".mainSlider", {
+  var PcSwiper = new Swiper(".mainSlider", {
     loop: true,
     autoplay: {
       delay: 5000,
@@ -33,15 +33,12 @@ $(document).ready(function() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    controller: {
-      control: swiper2
-    },
     on: {
       slideChangeTransitionEnd : function(){
         // console.log(this.activeIndex);
           var active = this.activeIndex;
           var txtShowNum = active-1;
-          if(active > 5){
+          if(active > 4){
             txtShowNum = 0;
           }
           // console.log(txtShowNum);
@@ -55,7 +52,7 @@ $(document).ready(function() {
       }
     }
   });
-  var swiper2 = new Swiper(".mainSlider2", {
+  var MobSwiper = new Swiper(".mainSlider2", {
     loop: true,
     autoplay: {
       delay: 5000,
@@ -69,15 +66,12 @@ $(document).ready(function() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    controller: {
-      control: swiper
-    },
     on: {
       slideChangeTransitionEnd : function(){
         // console.log(this.activeIndex);
           var active = this.activeIndex;
           var txtShowNum = active-1;
-          if(active > 2){
+          if(active > 4){
             txtShowNum = 0;
           }
           // console.log(txtShowNum);
@@ -91,8 +85,7 @@ $(document).ready(function() {
       }
     }
   });
-  swiper.controller.control = swiper2;
-  swiper2.controller.control = swiper;
+
   // Scroll Animation (sa, 스크롤 애니메이션)
   var hiTriggerMargin = 250;
   var hiElementList = document.querySelectorAll('.workWrap li');

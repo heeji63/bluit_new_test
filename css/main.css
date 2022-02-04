@@ -22,6 +22,12 @@
 #portfolioSlider2{display: none;}
 #portfolioSlider2 .swiper-slide{font-size: 0;}
 #portfolioSlider2 .swiper-slide img{width:100%;}
+.swiper-btn_m{display: none;}
+.swiper-button-nextM, .swiper-button-prevM {position: absolute;top: 50%;width: calc(var(--swiper-navigation-size)/ 44 * 27);height: var(--swiper-navigation-size);margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));z-index: 10;cursor: pointer;display: flex;align-items: center;justify-content: center;color: var(--swiper-navigation-color,var(--swiper-theme-color));}
+.section1 .swiper-button-prevM{width:80px;height:80px;top:auto;bottom:100px;left:50%;margin-left: -84.5px;}
+.section1 .swiper-button-prevM::after{content:'';display: block;width:80px;height:80px;background: url('../images/main/btn_prev.png') no-repeat 0 0;background-size: cover;}
+.section1 .swiper-button-nextM{width:80px;height:80px;top:auto;bottom:100px;right:auto;left:50%;margin-left: 15.5px;}
+.section1 .swiper-button-nextM::after{content:'';display: block;width:80px;height:80px;background: url('../images/main/btn_next.png') no-repeat 0 0;background-size: cover;}
 /* section2 */
 .workWrap{margin-bottom: 30px;display: flex;flex-wrap: wrap;justify-content: space-between;}
 .workWrap li{width:calc(33.3333% - 33.3333px);overflow: hidden;margin-bottom: 50px;position: relative;opacity: 0;top:-20px;transition: opacity 0.3s ease, top 0.3s ease;}
@@ -70,7 +76,6 @@
   }
 }
 /* section4 */
-.section4{background: url('../images/main/main_bg_contact.png') no-repeat 50% 0;background-size: cover;}
 .section4 .inner-02{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .section4 .title{width:calc(50% - 17.5px);}
 .section4 .title h2{text-align: left;line-height: 1.3;}
@@ -82,21 +87,21 @@
 .contactBox .essentialUl{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .contactBox .essentialUl li{width:calc(50% - 7px);}
 .contactBox .essentialUl li:nth-child(n+3){margin-top:14px;}
-.contactBox .essentialUl li input{display: block;width: 100%;border:none;font-size: 14px;background: rgba(247,247,247,0.6);box-sizing: border-box;color:#fff;padding:17px 30px 16px;font-weight: 600;}
+.contactBox .essentialUl li input{display: block;width: 100%;border:1px solid rgba(255,255,255,0.6);font-size: 14px;background: none;box-sizing: border-box;color:#fff;padding:17px 30px 16px;font-weight: 600;}
 .contactBox .essentialUl li input::placeholder{color:#fff;}
-.contactBox .essentialUl li select{display: block;width: 100%;border: none;font-size: 14px;background:url('../images/main/ic_select.png') no-repeat 91% 50% rgba(247,247,247,0.6);-webkit-appearance: none;cursor: pointer;box-sizing: border-box;color:#fff;padding:17px 30px 16px;font-weight: 600;}
+.contactBox .essentialUl li select{display: block;width: 100%;border: 1px solid rgba(255,255,255,0.6);font-size: 14px;background:url('../images/main/ic_select.png') no-repeat 91% 50%;-webkit-appearance: none;cursor: pointer;box-sizing: border-box;color:#fff;padding:17px 30px 16px;font-weight: 600;}
 .contactBox .essentialUl li select option{background: #0E172B;}
 .contactBox .choice{margin-top:50px;}
 .contactBox .choiceUl{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .contactBox .choiceUl li{width:calc(50% - 7px);}
 .contactBox .choiceUl li:nth-child(3){width:100%;font-size: 0;margin-top: 14px;}
 .contactBox .choiceUl li:nth-child(4){width:100%;margin-top: 14px;}
-.contactBox .choiceUl li input{display: block;width: 100%;border:none;font-size: 14px;background: rgba(247,247,247,0.6);box-sizing: border-box;color:#fff;padding:17px 30px 16px;font-weight: 600;}
+.contactBox .choiceUl li input{display: block;width: 100%;border:1px solid rgba(247,247,247,0.6);font-size: 14px;background: none;box-sizing: border-box;color:#fff;padding:17px 30px 16px;font-weight: 600;}
 .contactBox .choiceUl li input::placeholder{color:#fff;}
-.contactBox .choiceUl li textarea{width:100%;resize: none;box-sizing: border-box;border:none;background: rgba(247,247,247,0.6);; color:#fff;padding:15px 30px;font-size: 14px;font-weight: 600;}
+.contactBox .choiceUl li textarea{width:100%;resize: none;box-sizing: border-box;border:1px solid rgba(247,247,247,0.6);background: none; color:#fff;padding:15px 30px;font-size: 14px;font-weight: 600;}
 .contactBox .choiceUl li textarea::placeholder{color:#fff;}
 .file-box input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
-.file-box label { display: block; width:100%; padding: 15px 16px 15px 36px; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle;background: rgba(247,247,247,0.6); font-size: 14px; color:#fff; border: none; position: relative; cursor: pointer;font-weight: 600;}
+.file-box label { display: block; width:100%; padding: 15px 16px 15px 36px; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle;background: none; font-size: 14px; color:#fff; border: 1px solid rgba(247,247,247,0.6); position: relative; cursor: pointer;font-weight: 600;}
 .file-box label::before{content:'+';padding-right: 7px;}
 .info-prov {
     margin: 25px 0 30px;

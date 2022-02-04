@@ -2,7 +2,7 @@
 /* common */
 *::selection{background-color:rgba(82,195,241,0.5);}
 .clearfix::after{content:"";display:block;clear: both;}
-body{overflow-x: hidden;}
+body{width:100%;height:100%;overflow-x: hidden;}
 .inner-01{width:calc(100% - 80px);margin: 0 auto;}
 .inner-02{max-width: 1400px;margin: 0 auto;padding:150px 0 100px;}
 .title{margin:0 0 80px;}
@@ -10,10 +10,13 @@ body{overflow-x: hidden;}
 .title p.sub{font-size: 18px;text-align: center;margin-top:25px;line-height: 1.4;}
 .title p.sub br{display: none;}
 .btnWrap{text-align: center;}
-.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;}
+.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;position: relative;overflow: hidden;}
 .btn.orange{background: #FF4900;}
+.btn.orange span{position: relative;z-index: 2;}
+.btn.orange::after{content:'';display: block;width:0;height: 100%;background: #eb3800;position: absolute;top:0;left:0;transition: width 0.5s ease-in-out;}
+.btn.orange:hover::after{width:100%;}
 .btn.skyblue{background: #38B8EF;}
-.btn.btnSend{width:100%;border-radius: 0;padding:17px 0 15px;font-size: 14px;font-weight: 600;letter-spacing: 4px;position: relative;}
+.btn.btnSend{width:100%;border-radius: 0;padding:17px 0 15px;font-size: 14px;font-weight: 600;letter-spacing: 4px;}
 .btn.btnSend em{margin-left: 0;transition: margin 0.3s ease;}
 .btn.btnSend:hover em{margin-left: -10px;}
 .btn.btnSend span{vertical-align: middle;font-size: 18px;position: absolute;opacity: 0;margin-left: -5px;transition: opacity 0.3s ease, margin 0.3s ease;}
@@ -39,7 +42,7 @@ body{overflow-x: hidden;}
 #header #allMenu .btn-line.short{width:25px;height:2px;background: #fff;top:36px;transition: top 0.3s ease;}
 #header #allMenu:hover .btn-line, #header #allMenu:hover .btn-line.short{top:24px;}
 /* 문의하기 버튼/ 상단으로 이동 버튼 */
-#header .btnMain{display: inline-block;width:60px;height:60px;font-size: 0;padding:0;border:none;background: none;text-align: center;cursor: pointer;position: fixed;right:5%;bottom:40px;}
+#header .btnMain{display: inline-block;width:60px;height:60px;font-size: 0;padding:0;border:none;background: none;text-align: center;cursor: pointer;position: fixed;right:40px;bottom:40px;}
 #header a.btnMain{bottom:110px;}
 #header .btnMain img{margin: -10px 0 0 -15px;}
 /* header on */
