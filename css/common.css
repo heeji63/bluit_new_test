@@ -9,8 +9,8 @@ body{width:100%;height:100%;overflow-x: hidden;}
 .title h2{font-size: 48px;text-align: center;font-weight: 600;}
 .title p.sub{font-size: 18px;text-align: center;margin-top:25px;line-height: 1.4;}
 .title p.sub br{display: none;}
-.btnWrap{text-align: center;}
-.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;position: relative;overflow: hidden;}
+.btnWrap{text-align: center;font-size: 0;}
+.btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;position: relative;overflow: hidden;line-height: 1;}
 .btn.orange{background: #FF4900;}
 .btn.orange span{position: relative;z-index: 2;}
 .btn.orange::after{content:'';display: block;width:0;height: 100%;background: #eb3800;position: absolute;top:0;left:0;transition: width 0.5s ease-in-out;}
@@ -30,23 +30,68 @@ body{width:100%;height:100%;overflow-x: hidden;}
 #header .gnb .gnb-ul li{margin: 0 20px;}
 #header .gnb .gnb-ul li a{font-size: 22px;font-weight: 600;}
 #header .btn-wrap{display: flex;flex-wrap: wrap;align-items: center;}
-#header .inquiry{font-size: 18px;display: block;margin: 3px 30px 0 0;}
+#header .inquiry{font-size: 18px;display: block;margin: 3px 30px 0 0;letter-spacing: 1.5px;}
 /*가운데서 좌우로 펼쳐지는 라인 에니메이션*/
-.spread-underline {text-decoration: none;letter-spacing: 1.5px;display: inline-block;padding: 5px 0;position: relative;}
+.spread-underline {text-decoration: none;display: inline-block;padding: 5px 0;position: relative;}
 .spread-underline:after {background: none repeat scroll 0 0 transparent;bottom: 0;content: "";display: block;height: 2px;left: 50%;position: absolute;background: #fff;transition: width 0.3s ease 0s, left 0.3s ease 0s;width: 0;}
 .spread-underline:hover:after {width: 100%;left: 0;}
 /*가운데서 좌우로 펼쳐지는 라인 에니메이션:끝*/
-#header #allMenu{width:50px;height:50px;background: none;border:none;position: relative;cursor: pointer;}
-#header #allMenu .btn-line{display: block;width:40px;height:2px;background: #fff;position: absolute;top:12px;left:50%;margin-left: -20px;transition: top 0.3s ease;}
-#header #allMenu span:nth-child(2).btn-line{top:24px;}
-#header #allMenu .btn-line.short{width:25px;height:2px;background: #fff;top:36px;transition: top 0.3s ease;}
-#header #allMenu:hover .btn-line, #header #allMenu:hover .btn-line.short{top:24px;}
-/* 문의하기 버튼/ 상단으로 이동 버튼 */
-#header .btnMain{display: inline-block;width:60px;height:60px;font-size: 0;padding:0;border:none;background: none;text-align: center;cursor: pointer;position: fixed;right:40px;bottom:40px;}
-#header a.btnMain{bottom:110px;}
-#header .btnMain img{margin: -10px 0 0 -15px;}
+#header #allMenuBtn{width:50px;height:50px;background: none;border:none;position: relative;cursor: pointer;}
+#header #allMenuBtn .btn-line{display: block;width:40px;height:2px;background: #fff;position: absolute;top:12px;left:50%;margin-left: -20px;transition: top 0.3s ease, transform 0.3s ease}
+#header #allMenuBtn span:nth-child(2).btn-line{top:24px;}
+#header #allMenuBtn .btn-line.short{width:25px;height:2px;background: #fff;top:36px;transition: top 0.3s ease, transform 0.3s ease, margin 0.3s ease;}
+#header #allMenuBtn:hover .btn-line, #header #allMenuBtn:hover .btn-line.short{top:24px;}
+#header #allMenuBtn.close .btn-line{transform: rotate(45deg);top:24px;}
+#header #allMenuBtn.close  span:nth-child(2).btn-line{transform: rotate(-45deg);}
+#header #allMenuBtn.close .btn-line.short{top:19.5px;margin-left: -17px;}
+.btnFloor .btnMain{display: inline-block;width:60px;height:60px;font-size: 0;padding:0;border:none;background: none;text-align: center;cursor: pointer;position: fixed;right:40px;bottom:40px;z-index: 997;}
+.btnFloor a.btnMain{bottom:110px;}
+.btnFloor .btnMain img{margin: -10px 0 0 -15px;}
 /* header on */
 #header.on{/*background: rgba(14,23,43,0.5);*/background: linear-gradient(rgba(14,23,43,0.55), 80%, transparent);padding:20px 0;/*border-bottom: 1px solid #576583;*/}
+#allMenu{width:100%;height:100%;position: fixed;z-index: 998;background: rgba(0,0,0,0.85);display: none;}
+#allMenu .inner-01{height:100%;position: relative;}
+#allMenu .inner-02{height:100%;}
+#allMenu .siteMapWrap{height:100%;display: flex;align-items: center;}
+#allMenu .siteMapWrap .siteMap li{height:85px;font-size: 80px;margin-bottom: 30px;overflow: hidden;}
+#allMenu .siteMapWrap .siteMap li:last-child{margin-bottom: 0;}
+#allMenu .siteMapWrap .siteMap li a:hover{color:#52C3F1;}
+#allMenu .siteMapWrap .siteMap li a:hover .water-fill{animation: wave 0.7s infinite linear, fill-up 5s ease-out alternate;animation-fill-mode: backwards;}
+#allMenu .siteMapWrap .siteMap li a:hover #water path{fill:#52C3F1;}
+@keyframes wave {
+  0% { x: -200px; }
+  100% { x: 0; }
+}
+
+
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 50px;
+  }
+  100% {
+    height: 100px;
+    y: -50px;
+  }
+}
+#allMenu .company-info{position: absolute;bottom:40px;right:0;text-align: right;}
+#allMenu .company-info .contactBtn{font-size: 0;display: inline-block;}
+#allMenu .company-info .info{margin:35px 0 17vh;font-size: 22px;line-height: 1.8;}
+#allMenu .company-info .copy{font-size: 18px;}
+@keyframes wave {
+  0% { x: -400px; }
+  100% { x: 0; }
+}
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 130px;
+  }
+  100% {
+    height: 160px;
+    y: -30px;
+  }
+}
 /* footer */
 #footer{background: #000;}
 #footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}

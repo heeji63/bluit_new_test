@@ -1,19 +1,4 @@
 $(document).ready(function() {
-  $(window).scroll(function(){
-    var scr = $(document).scrollTop();
-    if(scr > 100){
-      $("#header").addClass('on narrow');
-    }else{
-      $("#header").removeClass('on narrow');
-    }
-  });
-  var scr = $(document).scrollTop();
-  if(scr > 150){
-    $("#header").addClass('on narrow');
-  }else{
-    $("#header").removeClass('on narrow');
-  }
-
   // $('.workWrap').isotope({
   //   itemSelector: '.grid-item',
   // });
@@ -54,21 +39,6 @@ $(document).ready(function() {
       if (!element.classList.contains('on')) {
         if (window.innerHeight > element.getBoundingClientRect().top + hiTriggerMargin) {
           element.classList.add('on');
-          if($('.workWrap li').hasClass('on')){
-            // var newsNum = $('.workWrap li').length();
-            var newsNum = $('.workWrap li').toArray();
-            // console.log(newsNum);
-            let count = 0;
-            for(let i=0; i < newsNum.length; i++) {
-              $( '.workWrap > li' ).eq(count).css("transition-delay","0s");
-              count++;
-            }
-            // document.write(count);
-          }
-        }
-      }else if (element.classList.contains('on')){
-        if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin){
-          element.classList.remove('on');
         }
       }
     });

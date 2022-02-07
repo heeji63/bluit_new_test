@@ -19,6 +19,16 @@ $(document).ready(function() {
   }else{
     $("#header").removeClass('on narrow');
   }
+  $("#allMenuBtn").click(function(){
+    $(this).toggleClass("close");
+    if($(this).hasClass("close")==true){
+      $("#allMenu").fadeIn(200);
+      $("#header .gnb").fadeOut(100);
+    }else{
+      $("#allMenu").fadeOut(200);
+      $("#header .gnb").fadeIn(100);
+    }
+  });
   var PcSwiper = new Swiper(".mainSlider", {
     loop: true,
     autoplay: {
