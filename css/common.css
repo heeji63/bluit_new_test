@@ -53,45 +53,29 @@ body{width:100%;height:100%;overflow-x: hidden;}
 #allMenu .inner-01{height:100%;position: relative;}
 #allMenu .inner-02{height:100%;}
 #allMenu .siteMapWrap{height:100%;display: flex;align-items: center;}
-#allMenu .siteMapWrap .siteMap li{height:85px;font-size: 80px;margin-bottom: 30px;overflow: hidden;}
+#allMenu .siteMapWrap .siteMap li{font-size: 80px;margin-bottom: 30px;}
 #allMenu .siteMapWrap .siteMap li:last-child{margin-bottom: 0;}
-#allMenu .siteMapWrap .siteMap li a:hover{color:#52C3F1;}
-#allMenu .siteMapWrap .siteMap li a:hover .water-fill{animation: wave 0.7s infinite linear, fill-up 5s ease-out alternate;animation-fill-mode: backwards;}
-#allMenu .siteMapWrap .siteMap li a:hover #water path{fill:#52C3F1;}
-@keyframes wave {
-  0% { x: -200px; }
-  100% { x: 0; }
+/* #allMenu .siteMapWrap .siteMap li a:hover{color:#52C3F1;} */
+#allMenu .siteMapWrap .siteMap li a {
+  transition: .3s;
+  /* background:#fff; */
+  background-position: left top;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 90 240 300' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='800' style='stroke: none; fill: rgb(255,255,255);' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none;'%3E%3C/path%3E%3C/svg%3E");
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
 }
-
-
-@keyframes fill-up {
-  0% {
-    height: 0;
-    y: 50px;
-  }
-  100% {
-    height: 100px;
-    y: -50px;
-  }
+#allMenu .siteMapWrap .siteMap li a:hover {
+  transition: 3s .1s;
+  background-position: bottom right;
 }
 #allMenu .company-info{position: absolute;bottom:40px;right:0;text-align: right;}
 #allMenu .company-info .contactBtn{font-size: 0;display: inline-block;}
 #allMenu .company-info .info{margin:35px 0 17vh;font-size: 22px;line-height: 1.8;}
 #allMenu .company-info .copy{font-size: 18px;}
-@keyframes wave {
-  0% { x: -400px; }
-  100% { x: 0; }
-}
-@keyframes fill-up {
-  0% {
-    height: 0;
-    y: 130px;
-  }
-  100% {
-    height: 160px;
-    y: -30px;
-  }
-}
 /* footer */
 #footer{background: #000;}
 #footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}
