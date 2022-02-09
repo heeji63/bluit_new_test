@@ -6,7 +6,7 @@ body{width:100%;height:100%;overflow-x: hidden;}
 .inner-01{width:calc(100% - 80px);margin: 0 auto;}
 .inner-02{max-width: 1400px;margin: 0 auto;padding:150px 0 100px;}
 .title{margin:0 0 80px;}
-.title h2{font-size: 48px;text-align: center;font-weight: 600;}
+.title h2{font-size: 43px;text-align: center;font-weight: 600;}
 .title p.sub{font-size: 18px;text-align: center;margin-top:25px;line-height: 1.4;}
 .title p.sub br{display: none;}
 .btnWrap{text-align: center;font-size: 0;}
@@ -19,7 +19,7 @@ body{width:100%;height:100%;overflow-x: hidden;}
 .btn.btnSend{width:100%;border-radius: 0;padding:17px 0 15px;font-size: 14px;font-weight: 600;letter-spacing: 4px;}
 .btn.btnSend em{margin-left: 0;transition: margin 0.3s ease;}
 .btn.btnSend:hover em{margin-left: -10px;}
-.btn.btnSend span{vertical-align: middle;font-size: 18px;position: absolute;opacity: 0;margin-left: -5px;transition: opacity 0.3s ease, margin 0.3s ease;}
+.btn.btnSend span{vertical-align: middle;font-size: 18px;position: absolute;opacity: 0;margin-top: -3px;margin-left: -5px;transition: opacity 0.3s ease, margin 0.3s ease;}
 .btn.btnSend:hover span{opacity: 1;margin-left: 0;}
 /* header */
 #header{width:100%;position: fixed;top:0;left:0;z-index: 999;padding:40px 0 0;background: linear-gradient(rgba(0,0,0,1), 15%, transparent);transition: padding 0.3s ease;}
@@ -48,43 +48,46 @@ body{width:100%;height:100%;overflow-x: hidden;}
 .btnFloor a.btnMain{bottom:110px;}
 .btnFloor .btnMain img{margin: -10px 0 0 -15px;}
 /* header on */
-#header.on{/*background: rgba(14,23,43,0.5);*/background: linear-gradient(rgba(14,23,43,0.55), 80%, transparent);padding:20px 0;/*border-bottom: 1px solid #576583;*/}
+#header.on{/*background: rgba(14,23,43,0.5);*/background: linear-gradient(rgba(14,23,43,0.55), 80%, transparent);padding:30px 0;/*border-bottom: 1px solid #576583;*/}
 #allMenu{width:100%;height:100%;position: fixed;z-index: 998;background: rgba(0,0,0,0.85);display: none;}
 #allMenu .inner-01{height:100%;position: relative;}
 #allMenu .inner-02{height:100%;}
 #allMenu .siteMapWrap{height:100%;display: flex;align-items: center;}
-#allMenu .siteMapWrap .siteMap li{font-size: 80px;margin-bottom: 30px;}
+#allMenu .siteMapWrap .siteMap li{font-size: 75px;margin-bottom: 35px;}
 #allMenu .siteMapWrap .siteMap li:last-child{margin-bottom: 0;}
 /* #allMenu .siteMapWrap .siteMap li a:hover{color:#52C3F1;} */
 #allMenu .siteMapWrap .siteMap li a {
-  transition: .3s;
-  /* background:#fff; */
+  transition: 0.7s;
+  background:#fff;
   background-position: left top;
-   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 90 240 300' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='800' style='stroke: none; fill: rgb(255,255,255);' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none;'%3E%3C/path%3E%3C/svg%3E");
+   background-image: url("../images/wave.png");
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   white-space: nowrap;
+  font-weight: 700;
 }
-#allMenu .siteMapWrap .siteMap li a:hover {
-  transition: 3s .1s;
-  background-position: bottom right;
-}
+#allMenu .siteMapWrap .siteMap li a::after{content: "";display: none;width:13px;height:13px;border-radius: 6.5px;background: #52C3F1;margin-left: 10px;/* opacity: 0;transition: opacity 0s ease; */}
+#allMenu .siteMapWrap .siteMap li a:hover {transition: 1.5s ease;background-position: bottom right;}
+#allMenu .siteMapWrap .siteMap li a:hover::after{display: inline-block;/* opacity: 1;transition: opacity 0s ease 1.5s; */}
 #allMenu .company-info{position: absolute;bottom:40px;right:0;text-align: right;}
 #allMenu .company-info .contactBtn{font-size: 0;display: inline-block;}
-#allMenu .company-info .info{margin:35px 0 17vh;font-size: 22px;line-height: 1.8;}
+#allMenu .company-info .info{margin:35px 0 10vw;font-size: 20px;line-height: 1.8;}
+#allMenu .company-info .info .mbr{display: none;}
 #allMenu .company-info .copy{font-size: 18px;}
 /* footer */
 #footer{background: #000;}
 #footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}
-#footer h6{font-size:24px;text-align: center;}
-#footer .profile .company-dw-btn{display: block;text-align: center;margin-top: 40px;}
+#footer h6{font-size:20px;text-align: center;font-weight: 700;}
+#footer .profile .company-dw-btn{display: block;text-align: center;margin-top: 35px;}
 #footer .profile .company-dw-btn p{margin-top: 30px;font-size: 18px;}
-#footer .info .txt{font-size: 18px;line-height: 1.4;}
-#footer .info .txt .address{margin-top:35px;}
+#footer .info .txt{font-size: 16px;line-height: 1.4;}
+#footer .info .txt p{line-height: 1.5;}
+#footer .info .txt .address{margin:35px 0 37px;}
 #footer .info .txt .address span{font-weight: 500;}
-#footer .contact .number{font-size: 36px;color:#38B8EF;margin: 25px 0 15px;font-weight: 500;}
-#footer .contact p{line-height: 1.4;}
+#footer .contact .number{font-size: 36px;color:#38B8EF;margin: 25px 0 18px;font-weight: 800;}
+#footer .contact p{line-height: 1.5;}
 #footer .copyright{background: #0E172B;text-align: center;padding:40px 0 38px;}
+#footer .copyright p{color:#BCBCBC;}

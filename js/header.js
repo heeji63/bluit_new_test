@@ -14,6 +14,13 @@ $(document).ready(function() {
     $("#header").removeClass('on narrow');
   }
   $("#allMenuBtn").click(function(){
-    $(this).addClass("close");
+    $(this).toggleClass("close");
+    if($(this).hasClass("close")==true){
+      $("#allMenu").fadeIn(200);
+      $("#header .gnb").opacity(1);
+    }else{
+      $("#allMenu").fadeOut(200);
+      $("#header .gnb").opacity(0);
+    }
   });
 });
