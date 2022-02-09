@@ -18,7 +18,7 @@
   .workWrap .infoTxt .disc{font-size: 14px;margin: 25px 0 10px;}
   .workWrap .infoTxt span{font-size: 25px;}
   .partnerBox .partnerUl li{width:25%;}
-  .partnerBox .partnerUl li img{width:100%;}
+  .partnerBox .partnerUl li img{width:85%;}
 }
 @media screen and (max-width:1200px) {
   /* common */
@@ -48,6 +48,7 @@
   #header .inquiry{margin: 3px 20px 0 0;}
   #allMenu .company-info .info{font-size: 16px;margin: 25px 0 10vw;}
   #allMenu .company-info .copy{font-size: 16px;}
+  #footer .profile{display: none;}
   /* main */
   .workWrap li{width: calc(50% - 15px);}
   .workWrap li:nth-child(n+5){display: none;}
@@ -59,7 +60,14 @@
 }
 @media screen and (max-width:768px) {
   /* common */
+  .title{margin: 0 0 70px;}
+  .title h2{font-size: 38px;}
+  .title p.sub{font-size: 16px;}
   #header .gnb{display: none;}
+  #header #allMenuBtn:hover .btn-line{top:12px;}
+  #header #allMenuBtn:hover .btn-line.short{top:36px;}
+  #header #allMenuBtn.close:hover .btn-line{top:24px;}
+  #header #allMenuBtn.close:hover .btn-line.short{top:19.5px;}
   #allMenu .inner-01{display: flex;flex-wrap: wrap;justify-content: flex-end;padding:0 0 40px;}
   #allMenu .inner-02{height:auto;width:100%;padding: 180px 0 0;}
   #allMenu .siteMapWrap{display: block;height:auto;}
@@ -80,7 +88,8 @@
   .section3 .partnerBox{display: none;}
   .section3 .inner-02{padding-bottom:0;}
   .section3 .loop-wrap{display: block;}
-  .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 93% 50%;}
+  .section4 .title p.disc{font-size: 18px;}
+  .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 95% 50%;}
 }
 @media screen and (max-width:600px){
   /* main */
@@ -89,9 +98,14 @@
 }
 @media screen and (max-width:500px){
   /* common */
+  .inner-02{padding: 100px 0 60px;}
+  .title h2{font-size: 32px;}
+  .title p.sub br{display: none;}
   #allMenu .siteMapWrap .siteMap li{font-size: 45px;}
   /* main */
   .section1 .portfolioTxt{bottom:120px;}
+  .section4 .title .inquiry-num{justify-content: space-between;}
+  .section4 .title .inquiry-num li:last-child{margin-left: 0;}
 }
 @media screen and (max-width:450px){
   /* common */
@@ -99,6 +113,15 @@
   #allMenu .siteMapWrap .siteMap li{font-size: min(10vw, 45px);margin-bottom:min(7vw, 20px);}
   #allMenu .company-info .info{font-size: 14px;}
   #allMenu .company-info .copy{font-size: 14px;}
+}
+@media screen and (max-width:400px){
+  /* common */
+  .title{margin: 0 0 50px;}
+  .title h2{font-size: 28px;}
+  .title p.sub{font-size: 14px;margin-top:20px;}
+  /* main */
+  .section4 .title p.disc{font-size: 16px;margin: 30px 0 120px;}
+  .section4 .title .disc::after{bottom:-70px;}
 }
 @media screen and (max-width:380px){
   /* common */
@@ -108,7 +131,11 @@
   #header #allMenuBtn .btn-line{width:30px;top:10px;}
   #header #allMenuBtn span:nth-child(2).btn-line{top:20px;}
   #header #allMenuBtn .btn-line.short{width:20px;top:30px;}
-  #header #allMenuBtn:hover .btn-line, #header #allMenuBtn:hover .btn-line.short{top:20px;}
   #header #allMenuBtn.close .btn-line{top:20px;}
+  #header #allMenuBtn.close .btn-line.short{top:18px;}
+  #header #allMenuBtn:hover .btn-line{top:10px;}
+  #header #allMenuBtn:hover .btn-line.short{top:30px;}
+  #header #allMenuBtn.close:hover .btn-line{top:20px;}
+  #header #allMenuBtn.close:hover .btn-line.short{top:18px;}
   #allMenu .company-info .info .mbr{display: block;}
 }
