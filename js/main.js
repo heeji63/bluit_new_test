@@ -29,50 +29,50 @@ $(document).ready(function() {
       $("#header .gnb").css('opacity','1');
     }
   });
-  var $menu = $('.gnb-ul li'),
-      $menuMap = $('.siteMap li'),
-      $contents = $('.main-cont'),
-      $doc = $('html, body');
-  $(function () {
-    // 해당 섹션으로 스크롤 이동
-    $menu.on('click','a', function(e){
-      // $('html').css('scroll-snap-type','none');
-      // var snap = $('html').css('scroll-snap-type');
-
-      var $target = $(this).parent(),
-          idx = $target.index(),
-          section = $contents.eq(idx),
-          offsetTop = section.offset().top;
-      $doc.stop().animate(
-        { scrollTop :offsetTop },
-        800,
-        'swing',
-        function() {
-            $( this ).animate( {
-              scrollTop :offsetTop,
-            }, 350, 'linear');
-            // if(snap=='none'){
-            //   $('html').css('scroll-snap-type','y mandatory');
-            // }
-          }
-      );
-      return false;
-    });
-    $menuMap.on('click','a', function(e){
-      // if($(this).parent("li").index() == 0 || $(this).parent("li").index() > 2){
-      //
-      // }else{
-        var $target = $(this).parent(),
-            idx = $target.index(),
-            section = $contents.eq(idx),
-            offsetTop = section.offset().top;
-        $("html").css("overflow","auto");
-        $(".sitemap").fadeOut(200);
-        $doc.stop().animate({
-          scrollTop :offsetTop }, 800); return false;
-      // }
-    });
-  });
+  // var $menu = $('.gnb-ul li'),
+  //     $menuMap = $('.siteMap li'),
+  //     $contents = $('.main-cont'),
+  //     $doc = $('html, body');
+  // $(function () {
+  //   // 해당 섹션으로 스크롤 이동
+  //   $menu.on('click','a', function(e){
+  //     // $('html').css('scroll-snap-type','none');
+  //     // var snap = $('html').css('scroll-snap-type');
+  //
+  //     var $target = $(this).parent(),
+  //         idx = $target.index(),
+  //         section = $contents.eq(idx),
+  //         offsetTop = section.offset().top;
+  //     $doc.stop().animate(
+  //       { scrollTop :offsetTop },
+  //       800,
+  //       'swing',
+  //       function() {
+  //           $( this ).animate( {
+  //             scrollTop :offsetTop,
+  //           }, 350, 'linear');
+  //           // if(snap=='none'){
+  //           //   $('html').css('scroll-snap-type','y mandatory');
+  //           // }
+  //         }
+  //     );
+  //     return false;
+  //   });
+  //   $menuMap.on('click','a', function(e){
+  //     // if($(this).parent("li").index() == 0 || $(this).parent("li").index() > 2){
+  //     //
+  //     // }else{
+  //       var $target = $(this).parent(),
+  //           idx = $target.index(),
+  //           section = $contents.eq(idx),
+  //           offsetTop = section.offset().top;
+  //       $("html").css("overflow","auto");
+  //       $(".sitemap").fadeOut(200);
+  //       $doc.stop().animate({
+  //         scrollTop :offsetTop }, 800); return false;
+  //     // }
+  //   });
+  // });
   var PcSwiper = new Swiper(".mainSlider", {
     loop: true,
     autoplay: {

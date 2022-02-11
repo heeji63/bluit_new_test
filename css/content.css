@@ -1,5 +1,5 @@
 /* work */
-.content .inner-02{padding:200px 0 70px;font-weight: 300;}
+.content.work .inner-02{padding:200px 0 70px;}
 .workTab{margin: -30px 0 90px;}
 .workTab .tab-ul{display: flex;max-width:505px;margin: 0 auto;flex-wrap: wrap;justify-content: space-between;}
 .workTab .tab-ul li{font-size: 18px;}
@@ -18,3 +18,84 @@
 .workWrap .infoTxt span{font-size: 30px;}
 .workWrap li img {display: block; min-width:100%; max-width: 100%;transition: transform 0.4s ease;}
 .workWrap li a:hover img{transform: scale(1.1);}
+/* contact */
+.content.contact .inner-02{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.content.contact .title{width:calc(50% - 17.5px);}
+.content.contact .title h2{text-align: left;line-height: 1.3;}
+.content.contact .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;}
+.content.contact .title .disc::after{content:'';display: block;width:60px;height:1px;background: #fff;position: absolute;bottom:-120px;}
+.content.contact .title .inquiry-num{display: flex;flex-wrap: wrap;}
+.content.contact .title .inquiry-num li:last-child{margin-left: 3.5vw;}
+.content.contact .title .inquiry-num li span{font-size: 20px;}
+.content.contact .title .inquiry-num li h3{font-size: 50px;color: #FF4900;font-weight: 600;margin-top: 15px;}
+.contactBox{width:calc(50% - 17.5px);}
+.contactBox h5{font-size:16px;font-weight: 600;margin-bottom: 17px;}
+.contactBox h5 br{display: none;}
+.contactBox .essentialUl{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.contactBox .essentialUl li{width:calc(50% - 7px);}
+.contactBox .essentialUl li:nth-child(n+3){margin-top:14px;}
+.contactBox .essentialUl li input{display: block;width: 100%;border:1px solid rgba(255,255,255,0.6);font-size: 14px;background: none;box-sizing: border-box;color:#fff;padding:13px 20px 12px;font-weight: 600;}
+.contactBox .essentialUl li input::placeholder{color:#fff;}
+.contactBox .essentialUl li select{display: block;width: 100%;border: 1px solid rgba(255,255,255,0.6);font-size: 14px;background:url('../images/main/ic_select.png') no-repeat 93% 50%;-webkit-appearance: none;cursor: pointer;box-sizing: border-box;color:#fff;padding:14px 20px 13px;font-weight: 600;}
+.contactBox .essentialUl li select option{background: #0E172B;}
+.contactBox .choice{margin-top:45px;}
+.contactBox .choiceUl{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.contactBox .choiceUl li{width:calc(50% - 7px);}
+.contactBox .choiceUl li:nth-child(3){width:100%;font-size: 0;margin-top: 14px;}
+.contactBox .choiceUl li:nth-child(4){width:100%;margin-top: 14px;}
+.contactBox .choiceUl li input{display: block;width: 100%;border:1px solid rgba(247,247,247,0.6);font-size: 14px;background: none;box-sizing: border-box;color:#fff;padding:13px 20px 12px;font-weight: 600;}
+.contactBox .choiceUl li input::placeholder{color:#fff;}
+.contactBox .choiceUl li textarea{width:100%;resize: none;box-sizing: border-box;border:1px solid rgba(247,247,247,0.6);background: none; color:#fff;padding:12px 20px;font-size: 14px;font-weight: 600;-ms-overflow-style: none; /* IE and Edge */scrollbar-width: none; /* Firefox */}
+.contactBox .choiceUl li textarea::placeholder{color:#fff;}
+.contactBox .choiceUl li textarea::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera */}
+.contactBox .file-box input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
+.contactBox .file-box label { display: block; width:100%; padding: 13px 20px 12px 20px; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle;background: none; font-size: 14px; color:#fff; border: 1px solid rgba(247,247,247,0.6); position: relative; cursor: pointer;font-weight: 600;}
+.contactBox .file-box label::before{content:'+';padding-right: 7px;}
+.info-prov {margin: 25px 0 30px;}
+.info-prov input[type=checkbox] {display: none;}
+.info-prov label {
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.info-prov input[type=checkbox] + label .check-cust {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3E5EE;
+  vertical-align: sub;
+  margin-right: 7px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.info-prov input[type=checkbox]:checked + label .check-cust {
+  background: url('../images/checkbox_on.png') no-repeat 50% 50% #fff;
+  border: 1px solid #5dcbfa;
+  background-size: 100%;
+}
+.info-prov label span {font-weight: bold;color: #38B8EF;}
+/* business */
+.content.business .inner-02{padding:300px 0 100px;}
+.businessUl{display: flex;flex-wrap: wrap;}
+.businessUl > li{width:33.3333%;padding:0 50px 60px 0;border-right:1px solid rgba(112,112,112,0.4);border-bottom:1px solid rgba(112,112,112,0.4);}
+.businessUl > li:nth-child(n+4){padding:70px 50px 0 0;border-bottom:none;}
+.businessUl > li:nth-child(3n){border-right: none;}
+.businessUl > li:nth-child(3n+2){padding-left:50px;padding-right:50px;}
+.businessUl > li:nth-child(3n+3){padding-left:50px;padding-right:0;}
+.businessUl > li h6{margin-bottom: 40px;font-size: 18px;font-weight: 700;}
+.businessUl > li > ul > li{margin-bottom: 25px;}
+.businessUl > li > ul > li:last-child{margin-bottom: 0;}
+.list li{position: relative;padding-left: 12px;}
+.list li::before{content: "";display: block;width:6px;height:6px;background: #fff;border-radius: 50%;position: absolute;top:50%;left:0;margin-top: -5px;}
+/* company */
+.companyWrap .companyInfo .infoTr{display: flex;flex-wrap: wrap;margin-bottom: 25px;}
+.companyWrap .companyInfo .infoTr li:first-child{width:190px;}
+.organization{display: flex;flex-wrap: wrap;justify-content: flex-end;background: url("../images/content/organization_box.png") no-repeat 0 0;background-size: contain;padding: 14% 0 13%;}
+.organizationUl{display: flex;flex-wrap: wrap;justify-content: space-around;width:50%;margin-right: 70px;}
+.organizationUl > li h6{margin-bottom: 30px;font-size: 30px;font-weight: 700;}
+.organizationUl > li > ul > li{margin-bottom: 20px;font-size: 20px;}
+.organizationUl > li > ul > li:last-child{margin-bottom: 0;}
