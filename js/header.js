@@ -17,10 +17,10 @@ $(document).ready(function() {
     $(this).toggleClass("close");
     if($(this).hasClass("close")==true){
       $("#allMenu").fadeIn(200);
-      $("#header .gnb").opacity(1);
+      $("#header .gnb").css('opacity','0');
     }else{
       $("#allMenu").fadeOut(200);
-      $("#header .gnb").opacity(0);
+      $("#header .gnb").css('opacity','1');
     }
   });
 });
