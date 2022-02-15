@@ -1,4 +1,22 @@
 $(document).ready(function() {
+  // Scroll Animation (sa, 스크롤 애니메이션)
+  var hiTriggerMargin2 = 400;
+  var hiElementList2 = document.querySelectorAll('.content');
+  var saFunc2 = function() {
+    $.each(hiElementList2, function(idx, element){
+      if (!element.classList.contains('on')) {
+        if (window.innerHeight > element.getBoundingClientRect().top + hiTriggerMargin2) {
+          element.classList.add('on');
+        }
+      }else if (element.classList.contains('on')){
+        if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin2){
+          element.classList.remove('on');
+        }
+      }
+    });
+  };
+  window.addEventListener('load', saFunc2);
+  window.addEventListener('scroll', saFunc2);
   // $('.workWrap').isotope({
   //   itemSelector: '.grid-item',
   // });
@@ -46,4 +64,5 @@ $(document).ready(function() {
   window.addEventListener('load', saFunc);
   window.addEventListener('scroll', saFunc);
 
+  $('.counter').countUp();
 });

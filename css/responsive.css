@@ -13,7 +13,8 @@
   .section1 .portfolioTxt li .sub{font-size: 20px;}
   .section1 .swiper-button-prev{bottom:50px;}
   .section1 .swiper-button-next{bottom:50px;}
-  .workWrap .infoTxt h4{font-size: 18px;}
+  .workWrap .infoTxt .verticalCenter{padding: 0 25px;}
+  .workWrap .infoTxt h4{font-size: 17px;}
   .workWrap .infoTxt .dev_lang{font-size: 14px;}
   .workWrap .infoTxt .disc{font-size: 14px;margin: 25px 0 10px;}
   .workWrap .infoTxt span{font-size: 25px;}
@@ -41,7 +42,7 @@
   .workWrap li{width: calc(33.3333% - 20px);margin-bottom: 30px;}
   .section4 .title{width:100%;}
   .contactBox{width:100%;}
-  .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 95% 50%;}
+  .contactBox .essentialUl li select{background:url('../img/main/ic_select.png') no-repeat 95% 50%;}
   /* company */
   .organizationUl{margin-right: 60px;}
   .organizationUl > li h6{font-size: 20px;}
@@ -59,10 +60,9 @@
   /* main */
   .workWrap li{width: calc(50% - 15px);}
   .workWrap li:nth-child(n+5){display: none;}
-  .workWrap .infoTxt h4{font-size: 28px;}
-  .workWrap .infoTxt .dev_lang{font-size: 18px;}
-  .workWrap .infoTxt .disc{font-size: 18px;}
-  .workWrap .infoTxt .disc br{display: block;}
+  .workWrap .infoTxt h4{font-size: 20px;}
+  .workWrap .infoTxt .dev_lang{font-size: 16px;}
+  .workWrap .infoTxt .disc{font-size: 16px;}
   .workWrap .infoTxt span{font-size: 40px;}
   /* company */
   .organization{padding: 10vw 0 10vw;}
@@ -107,6 +107,8 @@
   .section1 .portfolioTxt li .sub br{display: block;}
   .workWrap li{width: 100%;}
   .workWrap li:nth-child(n+3){display: none;}
+  .workWrap .infoTxt h4{font-size:28px;}
+  .workWrap .infoTxt .disc br{display: block;}
   .section3 .partnerBox{display: none;}
   .section3 .inner-02{padding-bottom:0;}
   .section3 .loop-wrap{display: block;}
@@ -115,7 +117,7 @@
   .companyWrap .companyInfo .infoTr li:first-child{width:160px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 160px);}
   .content.company .title h2 br{display: block;}
-  .organization{padding: 30vw 0 30vw;background: url("../images/content/company_bi.png") no-repeat 50% 50%;background-size: contain;}
+  .organization{padding: 30vw 0 30vw;background: url("../img/content/company_bi.png") no-repeat 50% 50%;background-size: contain;}
   .organizationUl{display: none;}
   /* business */
   .content.business .inner-02{padding: 220px 0 100px;}
@@ -131,6 +133,10 @@
   /* main */
   .section1 .portfolioTxt{bottom:140px;}
   .section1 .portfolioTxt li .sub{margin-top: 15px;}
+  .workWrap .infoTxt h4{font-size:20px;}
+  .workWrap .infoTxt .dev_lang{font-size: 16px;}
+  .workWrap .infoTxt .disc{font-size: 16px;}
+  .workWrap .infoTxt span{font-size: 35px;}
   /* business */
   .content.business .inner-02{padding: 180px 0 100px;}
   .businessUl > li{padding:0 25px 25px 0;}
@@ -147,8 +153,10 @@
   #allMenu .siteMapWrap .siteMap li{font-size: 45px;}
   /* main */
   .section1 .portfolioTxt{bottom:120px;}
+  .workWrap .infoTxt .disc br{display: none;word-break: keep-all;}
   .section4 .title .inquiry-num{justify-content: space-between;}
-  .section4 .title .inquiry-num li:last-child{margin-left: 0;}
+  .section4 .title .inquiry-num li{width:50%;}
+  .section4 .title .inquiry-num li:last-child{margin-left: 0;text-align: right;}
   /* company */
   .companyWrap .companyInfo .infoTr li:first-child{width:130px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 130px);}
@@ -197,6 +205,11 @@
   #header #allMenuBtn.close:hover .btn-line{top:20px;}
   #header #allMenuBtn.close:hover .btn-line.short{top:18px;}
   /* main */
+  .workWrap .infoTxt .verticalCenter{padding: 0 20px;}
+  .workWrap .infoTxt h4{font-size: 18px;word-break: keep-all;}
+  .workWrap .infoTxt .dev_lang{font-size: 14px;}
+  .workWrap .infoTxt .disc{font-size: 14px;}
+  .workWrap .infoTxt span{font-size: 30px;}
   .section4 .title p.disc{font-size: 16px;margin: 30px 0 120px;}
   .section4 .title .disc::after{bottom:-70px;}
   .section4 .title .inquiry-num li span{font-size: 16px;}
@@ -222,4 +235,7 @@
   /* company */
   .companyWrap .companyInfo .infoTr{margin-bottom: 15px;}
   .companyWrap .companyInfo .infoTr li{font-size: 14px;}
+}
+@media screen and (max-width:300px){
+  .workWrap .infoTxt .disc{margin: 15px 0 5px;line-height: 1.4;}
 }

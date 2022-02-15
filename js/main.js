@@ -141,6 +141,25 @@ $(document).ready(function() {
   });
 
   // Scroll Animation (sa, 스크롤 애니메이션)
+  var hiTriggerMargin2 = 400;
+  var hiElementList2 = document.querySelectorAll('.main-cont');
+  var saFunc2 = function() {
+    $.each(hiElementList2, function(idx, element){
+      if (!element.classList.contains('on')) {
+        if (window.innerHeight > element.getBoundingClientRect().top + hiTriggerMargin2) {
+          element.classList.add('on');
+        }
+      }else if (element.classList.contains('on')){
+        if (window.innerHeight < element.getBoundingClientRect().top + hiTriggerMargin2){
+          element.classList.remove('on');
+        }
+      }
+    });
+  };
+  window.addEventListener('load', saFunc2);
+  window.addEventListener('scroll', saFunc2);
+
+  // Scroll Animation (sa, 스크롤 애니메이션)
   var hiTriggerMargin = 250;
   var hiElementList = document.querySelectorAll('.workWrap li');
   var saFunc = function() {
@@ -199,4 +218,6 @@ $(document).ready(function() {
     }
     $(".upload-name").text(fileName);
   });
+
+  $('.counter').countUp();
 });

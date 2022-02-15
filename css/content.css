@@ -1,3 +1,30 @@
+/* common */
+.inner-02{position: relative;z-index: 1;}
+/* #footer{position: relative;z-index: 1;} */
+.bg-circle-01{width:600px;height:600px;background: #38B8EF;border-radius: 50%;position: fixed;top:-25%;right:-10%;z-index: 0;transition: 0.6s ease;}
+.bg-circle-02{width:420px;height:420px;background: #38B8EF;border-radius: 50%;position: fixed;bottom:-5%;left:-7%;z-index: 0;transition: 0.6s ease;}
+.business .bg-circle-01{animation-name: move01; animation-duration: 0.6s;animation-fill-mode: both;animation-direction:reverse;}
+.business .bg-circle-02{animation-name: move02; animation-duration: 0.6s;animation-fill-mode: both;animation-direction:reverse;}
+.company .bg-circle-01{animation-name: move01; animation-duration: 0.6s;animation-fill-mode: both;}
+.company .bg-circle-02{animation-name: move02; animation-duration: 0.6s;animation-fill-mode: both;}
+/* .bg-circle-01.move{top:65%;transition: 0.6s ease;}
+.bg-circle-02.move{bottom:70%;transition: 0.6s ease;} */
+@keyframes move01 {
+  0%{
+     top:-25%;right:-10%;
+  }
+  100%{
+    top:65%;
+  }
+}
+@keyframes move02 {
+  0%{
+     bottom:-5%;left:-7%;
+  }
+  100%{
+    bottom:70%;
+  }
+}
 /* work */
 .content.work .inner-02{padding:200px 0 70px;}
 .workTab{margin: -30px 0 90px;}
@@ -22,9 +49,11 @@
 .content.contact .inner-02{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .content.contact .title{width:calc(50% - 17.5px);}
 .content.contact .title h2{text-align: left;line-height: 1.3;}
-.content.contact .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;}
+.content.contact .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.2s;}
 .content.contact .title .disc::after{content:'';display: block;width:60px;height:1px;background: #fff;position: absolute;bottom:-120px;}
+.content.contact.on .title p.disc{top:0;opacity: 1;}
 .content.contact .title .inquiry-num{display: flex;flex-wrap: wrap;}
+.content.contact .title .inquiry-num li{width:160px;}
 .content.contact .title .inquiry-num li:last-child{margin-left: 3.5vw;}
 .content.contact .title .inquiry-num li span{font-size: 20px;}
 .content.contact .title .inquiry-num li h3{font-size: 50px;color: #FF4900;font-weight: 600;margin-top: 15px;}

@@ -44,6 +44,8 @@
 .workWrap li img {display: block; min-width:100%; max-width: 100%;transition: transform 0.4s ease;}
 .workWrap li a:hover img{transform: scale(1.1);}
 /* section3 */
+.partnerBox{position: relative;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.5s;}
+.main-cont.on .partnerBox{top:0;opacity: 1;}
 .partnerBox .partnerUl{display: flex;flex-wrap: wrap;}
 .partnerBox .partnerUl li{width:16.6666%;text-align: center;}
 .partnerBox .partnerUl li img{opacity: 0.5;width:75%;}
@@ -78,9 +80,10 @@
 /* section4 */
 .section4 .inner-02{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .section4 .title{width:calc(50% - 17.5px);}
-.section4 .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;}
+.section4 .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.2s;}
 .section4 .title .disc::after{content:'';display: block;width:60px;height:1px;background: #fff;position: absolute;bottom:-120px;}
 .section4 .title .inquiry-num{display: flex;flex-wrap: wrap;}
+.section4 .title .inquiry-num li{width:160px;}
 .section4 .title .inquiry-num li:last-child{margin-left: 3.5vw;}
 .section4 .title .inquiry-num li span{font-size: 20px;}
 .section4 .title .inquiry-num li h3{font-size: 50px;color: #FF4900;font-weight: 600;margin-top: 15px;}
