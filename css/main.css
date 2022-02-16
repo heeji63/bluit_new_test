@@ -1,8 +1,10 @@
 /* main */
 /* section1 */
 .section1 .inner-01{position: relative;}
+#portfolioSlider{overflow: hidden;}
 #portfolioSlider .swiper-slide{font-size: 0;}
-#portfolioSlider .swiper-slide img{width:100%;}
+#portfolioSlider .swiper-slide img{width:100%;transform: scale(1.2);transition: transform 4.2s ease;}
+#portfolioSlider .swiper-slide.swiper-slide-active img{transform: scale(1);}
 .section1 .portfolioTxt{position: absolute;left: 0;bottom:240px;z-index: 10;}
 .section1 .portfolioTxt li h2{font-size: 48px;font-weight:600;}
 .section1 .portfolioTxt li.on h2 .slide-effect{overflow: hidden;}
@@ -19,9 +21,10 @@
 .section1 .swiper-button-prev::after{content:'';display: block;width:60px;height:60px;background: url('../images/main/btn_prev.png') no-repeat 0 0;}
 .section1 .swiper-button-next{width:60px;height:60px;top:auto;bottom:100px;right:auto;left:68px;}
 .section1 .swiper-button-next::after{content:'';display: block;width:60px;height:60px;background: url('../images/main/btn_next.png') no-repeat 0 0;}
-#portfolioSlider2{display: none;}
+#portfolioSlider2{display: none;overflow: hidden;}
 #portfolioSlider2 .swiper-slide{font-size: 0;}
-#portfolioSlider2 .swiper-slide img{width:100%;}
+#portfolioSlider2 .swiper-slide img{width:100%;transform: scale(1.2);transition: transform 4.2s ease;}
+#portfolioSlider2 .swiper-slide.swiper-slide-active img{transform: scale(1);}
 .swiper-btn_m{display: none;}
 .swiper-button-nextM, .swiper-button-prevM {position: absolute;top: 50%;width: calc(var(--swiper-navigation-size)/ 44 * 27);height: var(--swiper-navigation-size);margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));z-index: 10;cursor: pointer;display: flex;align-items: center;justify-content: center;color: var(--swiper-navigation-color,var(--swiper-theme-color));}
 .section1 .swiper-button-prevM{width:80px;height:80px;top:auto;bottom:100px;left:50%;margin-left: -84.5px;}
@@ -44,7 +47,7 @@
 .workWrap li img {display: block; min-width:100%; max-width: 100%;transition: transform 0.4s ease;}
 .workWrap li a:hover img{transform: scale(1.1);}
 /* section3 */
-.partnerBox{position: relative;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.5s;}
+.partnerBox{position: relative;top:-20px;opacity: 0;transition: top 0.7s ease, opacity 0.3s ease;transition-delay: 0.5s;}
 .main-cont.on .partnerBox{top:0;opacity: 1;}
 .partnerBox .partnerUl{display: flex;flex-wrap: wrap;}
 .partnerBox .partnerUl li{width:16.6666%;text-align: center;}
@@ -80,14 +83,19 @@
 /* section4 */
 .section4 .inner-02{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .section4 .title{width:calc(50% - 17.5px);}
-.section4 .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.2s;}
+.section4 .title h2{top:0;left:-20px;transition: left 0.3s ease, opacity 0.3s ease;}
+.main-cont.section4.on .title h2{left:0;}
+.section4 .title p.disc{font-size: 20px;margin-top:50px;line-height: 1.5;position: relative;margin-bottom: 180px;left:-20px;opacity: 0;transition: left 0.3s ease, opacity 0.3s ease;transition-delay: 0.2s;}
 .section4 .title .disc::after{content:'';display: block;width:60px;height:1px;background: #fff;position: absolute;bottom:-120px;}
+.main-cont.on .title p.disc{left:0;opacity: 1;}
 .section4 .title .inquiry-num{display: flex;flex-wrap: wrap;}
-.section4 .title .inquiry-num li{width:160px;}
-.section4 .title .inquiry-num li:last-child{margin-left: 3.5vw;}
+.section4 .title .inquiry-num li{width:160px;opacity: 0;position: relative;top:20px;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.5s;}
+.section4 .title .inquiry-num li:last-child{margin-left: 3.5vw;transition-delay: 0.7s;}
 .section4 .title .inquiry-num li span{font-size: 20px;}
 .section4 .title .inquiry-num li h3{font-size: 50px;color: #FF4900;font-weight: 600;margin-top: 15px;}
-.contactBox{width:calc(50% - 17.5px);}
+.main-cont.on.section4 .title .inquiry-num li{opacity: 1;top:0;}
+.contactBox{width:calc(50% - 17.5px);position: relative;right:-20px;opacity: 0;transition: right 0.3s ease, opacity 0.3s ease;transition-delay: 0.2s;}
+.main-cont.on .contactBox{right:0;opacity: 1;}
 .contactBox h5{font-size:16px;font-weight: 600;margin-bottom: 17px;}
 .contactBox h5 br{display: none;}
 .contactBox .essentialUl{display: flex;flex-wrap: wrap;justify-content: space-between;}

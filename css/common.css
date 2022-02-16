@@ -13,7 +13,6 @@ body{width:100%;height:100%;}
 .title p.sub br{display: none;}
 .main-cont.on .title h2, .content.on .title h2{top:0;opacity: 1;}
 .main-cont.on .title p.sub, .content.on .title p.sub{top:0;opacity: 1;}
-.main-cont.on .title p.disc{top:0;opacity: 1;}
 .btnWrap{text-align: center;font-size: 0;}
 .btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;position: relative;overflow: hidden;line-height: 1;}
 .btn.orange{background: #FF4900;}
@@ -31,7 +30,7 @@ body{width:100%;height:100%;}
 #header .inner-01{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 #header .logo{width:65px;}
 #header .logo a{display: block;width:55px;height:42px;background: url("../images/logo.png") no-repeat 0 0;background-size: cover;text-indent: -9999px;transition: background 0.3s ease;}
-#header .logo:hover{animation-name: shake;animation-duration: 100ms;animation-timing-function: ease-in-out;animation-iteration-count: infinite;transform-origin: center center;}
+/* #header .logo:hover{animation-name: shake;animation-duration: 100ms;animation-timing-function: ease-in-out;animation-iteration-count: infinite;transform-origin: center center;} */
 #header .gnb .gnb-ul{display: flex;flex-wrap: wrap;}
 #header .gnb .gnb-ul li{margin: 0 20px;}
 #header .gnb .gnb-ul li a{font-size: 22px;font-weight: 600;}

@@ -64,5 +64,39 @@ $(document).ready(function() {
   window.addEventListener('load', saFunc);
   window.addEventListener('scroll', saFunc);
 
-  $('.counter').countUp();
+	// var win = $(window);
+	// 	winHei = win.height();
+	// 	footHei = $('#footer').height();
+	// 	circle01 = $(".bg-circle-01");
+	// 	circle02 = $(".bg-circle-02");
+  //
+	// win.scroll(function(){
+  //
+	// 	winTop = $(this).scrollTop();
+  //   // console.log((winHei+winTop)-footHei);
+	// 	if(winTop>0){
+	// 		circle01.stop().animate({top:(winHei/30)+winTop-130}, 300, 'easeInOutExpo');
+	// 		circle02.stop().animate({top:(winHei/30)+winTop+(winHei*0.45)}, 300, 'easeInOutExpo');
+  //     if(winTop>1000){
+  //       circle01.stop().animate({top:(winHei/30)+870}, 300, 'easeInOutExpo');
+  //       circle02.stop().animate({top:(winHei/30)+1410}, 300, 'easeInOutExpo');
+  //     }
+	// 	}else {
+	// 		circle01.stop().animate({top:-130}, 300, 'easeInOutExpo');
+	// 		circle02.stop().animate({top:(winHei*0.45)}, 300, 'easeInOutExpo');
+	// 	}
+	// });
+  $(window).scroll(function(){
+    /* 스크롤시 cirecle */
+    var scroll = $(this).scrollTop(),
+    	$item1 = $('.bg-circle-01'),
+    	$item2 = $('.bg-circle-02');
+
+    $item1.css({
+      'transform': 'translate3d(' + 0 + 'px, ' + scroll * 0.95+ 'px, ' + 0 + 'px )'
+    });
+    $item2.css({
+      'transform': 'translate3d(' + 0 + 'px, ' + scroll * 0.95+ 'px, ' + 0 + 'px )'
+    });
+  });
 });

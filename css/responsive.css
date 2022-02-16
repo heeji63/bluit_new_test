@@ -42,7 +42,7 @@
   .workWrap li{width: calc(33.3333% - 20px);margin-bottom: 30px;}
   .section4 .title{width:100%;}
   .contactBox{width:100%;}
-  .contactBox .essentialUl li select{background:url('../img/main/ic_select.png') no-repeat 95% 50%;}
+  .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 95% 50%;}
   /* company */
   .organizationUl{margin-right: 60px;}
   .organizationUl > li h6{font-size: 20px;}
@@ -117,7 +117,7 @@
   .companyWrap .companyInfo .infoTr li:first-child{width:160px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 160px);}
   .content.company .title h2 br{display: block;}
-  .organization{padding: 30vw 0 30vw;background: url("../img/content/company_bi.png") no-repeat 50% 50%;background-size: contain;}
+  .organization{padding: 30vw 0 30vw;background: url("../images/content/company_bi.png") no-repeat 50% 50%;background-size: contain;}
   .organizationUl{display: none;}
   /* business */
   .content.business .inner-02{padding: 220px 0 100px;}
