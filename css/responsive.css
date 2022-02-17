@@ -38,8 +38,8 @@
   .section1 .portfolioTxt li .sub{font-size: 18px;}
   .section1 .swiper-button-prev{bottom:40px;}
   .section1 .swiper-button-next{bottom:40px;}
-  .workWrap{margin-bottom: 50px;}
-  .workWrap li{width: calc(33.3333% - 20px);margin-bottom: 30px;}
+  .workWrap{margin-bottom: 50px;margin: 0 0 30px -10px;}
+  .workWrap li{width: calc(33.3333% - 20px);}
   .section4 .title{width:100%;}
   .contactBox{width:100%;}
   .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 95% 50%;}
@@ -58,6 +58,7 @@
   #allMenu .company-info .copy{font-size: 16px;}
   #footer .profile{display: none;}
   /* main */
+  .workWrap{width:calc(100% + 50px);}
   .workWrap li{width: calc(50% - 15px);}
   .workWrap li:nth-child(n+5){display: none;}
   .workWrap .infoTxt h4{font-size: 20px;}
@@ -105,6 +106,7 @@
   .section1 .portfolioTxt li h2{text-align: center;font-size: min(6vw, 46px);}
   .section1 .portfolioTxt li .sub{text-align: center;font-size: min(3vw, 28px);}
   .section1 .portfolioTxt li .sub br{display: block;}
+  .workWrap{width:100%;margin: 0 0 30px 0;}
   .workWrap li{width: 100%;}
   .workWrap li:nth-child(n+3){display: none;}
   .workWrap .infoTxt h4{font-size:28px;}
@@ -185,6 +187,8 @@
   .businessUl > li:nth-child(2n){padding-left: 0;}
   .businessUl > li:nth-child(n+4){border-bottom: 1px solid rgba(112,112,112,0.4);padding: 30px 0 30px;}
   .businessUl > li:nth-child(3n+3){border-right: none;padding: 30px 0 30px;}
+  /* work */
+  .workTab .tab-ul li{font-size: 15px;}
 }
 @media screen and (max-width:400px){
   /* common */
@@ -205,6 +209,9 @@
   #header #allMenuBtn.close:hover .btn-line{top:20px;}
   #header #allMenuBtn.close:hover .btn-line.short{top:18px;}
   /* main */
+  .main-cont .inner-02{padding: 50px 0 80px;}
+  .section3 .inner-02{padding-bottom: 0;}
+  .workWrap{margin-bottom: 30px;}
   .workWrap .infoTxt .verticalCenter{padding: 0 20px;}
   .workWrap .infoTxt h4{font-size: 18px;word-break: keep-all;}
   .workWrap .infoTxt .dev_lang{font-size: 14px;}
@@ -217,6 +224,8 @@
   /* company */
   .companyWrap .companyInfo .infoTr li:first-child{width:100px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 100px);}
+  /* work */
+  .workTab .tab-ul li{font-size: 13px;}
 }
 @media screen and (max-width:380px){
   /* common */
@@ -235,6 +244,9 @@
   /* company */
   .companyWrap .companyInfo .infoTr{margin-bottom: 15px;}
   .companyWrap .companyInfo .infoTr li{font-size: 14px;}
+  /* work */
+  .workTab .tab-ul li:first-child{width:30%;margin-bottom: 10px;}
+  .workTab .tab-ul li:nth-child(2){width:70%;text-align: right;margin-bottom: 10px;}
 }
 @media screen and (max-width:300px){
   .workWrap .infoTxt .disc{margin: 15px 0 5px;line-height: 1.4;}

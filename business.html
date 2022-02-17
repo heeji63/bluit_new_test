@@ -82,8 +82,8 @@
       </div>
     </div>
     <article class="business">
-      <div class="bg-circle-01"></div>
-      <div class="bg-circle-02"></div>
+      <div class="bg-circle-01 move"></div>
+      <div class="bg-circle-02 move"></div>
       <section class="content business">
         <div class="inner-02">
           <div class="title left">
@@ -194,5 +194,11 @@
         <p>&copy; 2021 BLU-IT. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      $(document).ready(function(){
+        $('.bg-circle-01').removeClass('move');
+        $('.bg-circle-02').removeClass('move');
+      });
+    </script>
   </body>
 </html>

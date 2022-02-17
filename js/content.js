@@ -21,22 +21,48 @@ $(document).ready(function() {
   //   itemSelector: '.grid-item',
   // });
   //masonry
-    var grid = $('.workWrap').masonry({
+    // var grid = $('.workWrap').masonry({
+    //   // options
+    //     // columnWidth: '.workWrap',
+    //     itemSelector: '.grid-item',
+    //     percentPosition: true,
+    // });
+    //
+    // // layout Masonry after each image loads
+    //     grid.imagesLoaded().progress( function() {
+    //       grid.masonry('layout');
+    //     });
+    //
+    // // init Isotope
+    // var grid = $('.workWrap').isotope({
+    //   itemSelector: '.grid-item'
+    // });
+    //masonry
+    $('.grid').masonry({
       // options
-        // columnWidth: '.workWrap',
+        columnWidth: '.grid-sizer',
         itemSelector: '.grid-item',
-        percentPosition: true,
+        percentPosition: true
     });
 
+
+        var $grid = $('.grid').masonry({
+  // options...
+        });
     // layout Masonry after each image loads
-        grid.imagesLoaded().progress( function() {
-          grid.masonry('layout');
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry('layout');
         });
 
     // init Isotope
-    var grid = $('.workWrap').isotope({
+    var $grid = $('.grid').isotope({
         itemSelector: '.grid-item'
         });
+
+    $('#m1, #m2, #m3, #m4').on( 'click', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
 
 
   $('.tab-ul li').on( 'click', 'a', function() {
@@ -50,19 +76,19 @@ $(document).ready(function() {
   });
 
   // Scroll Animation (sa, 스크롤 애니메이션)
-  var hiTriggerMargin = 150;
-  var hiElementList = document.querySelectorAll('.workWrap li');
-  var saFunc = function() {
-    $.each(hiElementList, function(idx, element){
-      if (!element.classList.contains('on')) {
-        if (window.innerHeight > element.getBoundingClientRect().top + hiTriggerMargin) {
-          element.classList.add('on');
-        }
-      }
-    });
-  };
-  window.addEventListener('load', saFunc);
-  window.addEventListener('scroll', saFunc);
+  // var hiTriggerMargin = 150;
+  // var hiElementList = document.querySelectorAll('.workWrap li');
+  // var saFunc = function() {
+  //   $.each(hiElementList, function(idx, element){
+  //     if (!element.classList.contains('on')) {
+  //       if (window.innerHeight > element.getBoundingClientRect().top + hiTriggerMargin) {
+  //         element.classList.add('on');
+  //       }
+  //     }
+  //   });
+  // };
+  // window.addEventListener('load', saFunc);
+  // window.addEventListener('scroll', saFunc);
 
 	// var win = $(window);
 	// 	winHei = win.height();
@@ -88,7 +114,8 @@ $(document).ready(function() {
 	// });
   $(window).scroll(function(){
     /* 스크롤시 cirecle */
-    var scroll = $(this).scrollTop(),
+    var scroll = $(this).scrollTop();
+    console.log(scroll);
     	$item1 = $('.bg-circle-01'),
     	$item2 = $('.bg-circle-02');
 
