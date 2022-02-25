@@ -122,6 +122,9 @@
   .content.company .title h2 br{display: block;}
   .organization{padding: 30vw 0 30vw;background: url("../images/content/company_bi.png") no-repeat 50% 50%;background-size: contain;}
   .organizationUl{display: none;}
+  .content.partner .partnerBox{display: none;}
+  .content.partner .inner-02{padding-bottom:0;}
+  .content.partner .loop-wrap{display: block;}
   /* business */
   .content.business .inner-02{padding: 220px 0 100px;}
   .businessUl > li{width: 50%;}

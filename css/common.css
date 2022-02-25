@@ -9,10 +9,15 @@ body{width:100%;height:100%;}
 .title h2{font-size: 43px;text-align: center;font-weight: 600;line-height: 1.3;position: relative;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;}
 .title.left h2{text-align: left;}
 .title p.sub{font-size: 18px;text-align: center;margin-top:25px;line-height: 1.4;position: relative;top:-20px;opacity: 0;transition: top 0.3s ease, opacity 0.3s ease;transition-delay: 0.2s;}
+.title p.sub.big{font-size: 24px;}
 .title.left p.sub{text-align: left;}
 .title p.sub br{display: none;}
 .main-cont.on .title h2, .content.on .title h2{top:0;opacity: 1;}
 .main-cont.on .title p.sub, .content.on .title p.sub{top:0;opacity: 1;}
+.highlighter {text-decoration: none;display: inline-block;padding: 5px 0;position: relative;transition: 0.7s;}
+.on .highlighter{transition: 1.5s ease;background-position: bottom right;}
+.highlighter:after {background: none repeat scroll 0 0 transparent;bottom: 6px;content: "";display: block;height: 7px;left: 0;position: absolute;z-index: -1;background: #38B8EF;transition: width 0.5s ease 0s;width: 0;transition-delay: 0s;}
+.on .highlighter:after {width: 100%;transition-delay: 0.5s;}
 .btnWrap{text-align: center;font-size: 0;}
 .btn{display: inline-block;padding:25px 77px;border-radius: 10px;font-size: 22px;border:none;cursor: pointer;position: relative;overflow: hidden;line-height: 1;}
 .btn.orange{background: #FF4900;}
@@ -89,7 +94,7 @@ font-weight: 700;}
 .btnFloor a.btnMain{bottom:110px;}
 .btnFloor .btnMain img{margin: -10px 0 0 -15px;}
 /* header on */
-#header.on{/*background: rgba(14,23,43,0.5);*/background: linear-gradient(rgba(14,23,43,1), 50%, transparent);padding:30px 0;/*border-bottom: 1px solid #576583;*/}
+#header.on{background: rgba(14,23,43,1);/*background: linear-gradient(rgba(14,23,43,1), 50%, transparent);*/padding:30px 0;/*border-bottom: 1px solid #576583;*/}
 #allMenu{width:100%;height:100%;position: fixed;z-index: 998;background: rgba(0,0,0,0.85);display: none;}
 #allMenu .inner-01{height:100%;position: relative;}
 #allMenu .inner-02{height:100%;}
