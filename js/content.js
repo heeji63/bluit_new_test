@@ -115,7 +115,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     /* 스크롤시 cirecle */
     var scroll = $(this).scrollTop();
-    console.log(scroll);
+    // console.log(scroll);
     	$item1 = $('.bg-circle-01'),
     	$item2 = $('.bg-circle-02');
 
