@@ -31,15 +31,28 @@ body{width:100%;height:100%;}
 #header .logo{width:65px;}
 #header .logo a{display: block;width:55px;height:42px;background: url("../images/logo.png") no-repeat 0 0;background-size: cover;text-indent: -9999px;transition: background 0.3s ease;}
 /* #header .logo:hover{animation-name: shake;animation-duration: 100ms;animation-timing-function: ease-in-out;animation-iteration-count: infinite;transform-origin: center center;} */
+#header .logo:hover{-webkit-animation-name: hvr-buzz;animation-name: hvr-buzz;-webkit-animation-duration: 0.15s;animation-duration: 0.15s;-webkit-animation-timing-function: linear;animation-timing-function: linear;-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite;}
 #header .gnb .gnb-ul{display: flex;flex-wrap: wrap;}
 #header .gnb .gnb-ul li{margin: 0 20px;}
 #header .gnb .gnb-ul li a{font-size: 22px;font-weight: 600;}
 #header .btn-wrap{display: flex;flex-wrap: wrap;align-items: center;}
 #header .inquiry{font-size: 18px;display: block;margin: 3px 30px 0 0;letter-spacing: 1.5px;}
 /*가운데서 좌우로 펼쳐지는 라인 에니메이션*/
-.spread-underline {text-decoration: none;display: inline-block;padding: 5px 0;position: relative;}
-.spread-underline:after {background: none repeat scroll 0 0 transparent;bottom: 0;content: "";display: block;height: 2px;left: 50%;position: absolute;background: #fff;transition: width 0.3s ease 0s, left 0.3s ease 0s;width: 0;}
-.spread-underline:hover:after {width: 100%;left: 0;}
+.spread-underline {text-decoration: none;display: inline-block;padding: 5px 0;position: relative;transition: 0.7s;
+background:#fff;
+background-position: left top;
+background-image: url("../images/wave.png");
+background-size: cover;
+color: #fff;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+/* display: inline-block; */
+white-space: nowrap;
+font-weight: 700;}
+.spread-underline:hover{transition: 1.5s ease;background-position: bottom right;}
+.spread-underline:after {background: none repeat scroll 0 0 transparent;bottom: 0;content: "";display: block;height: 2px;left: 50%;position: absolute;background: #38B8EF;transition: width 0.3s ease 0s, left 0.3s ease 0s;width: 0;transition-delay: 0s;}
+.spread-underline:hover:after {width: 100%;left: 0;transition-delay: 0.5s;}
 /*가운데서 좌우로 펼쳐지는 라인 에니메이션:끝*/
 #header #allMenuBtn{width:50px;height:50px;background: none;border:none;position: relative;cursor: pointer;}
 #header #allMenuBtn .btn-line{display: block;width:40px;height:2px;background: #fff;position: absolute;top:12px;left:50%;margin-left: -20px;transition: top 0.3s ease, transform 0.3s ease}
@@ -51,6 +64,26 @@ body{width:100%;height:100%;}
 #header #allMenuBtn.close .btn-line.short{top:19.5px;margin-left: -17px;}
 @keyframes shake {
   2%{transform:translate(-.5px,2.5px) rotate(-.5deg)}4%{transform:translate(.5px,-1.5px) rotate(-.5deg)}6%{transform:translate(1.5px,-1.5px) rotate(1.5deg)}8%{transform:translate(.5px,2.5px) rotate(-.5deg)}10%{transform:translate(-1.5px,2.5px) rotate(1.5deg)}12%{transform:translate(2.5px,-.5px) rotate(-.5deg)}14%{transform:translate(2.5px,2.5px) rotate(1.5deg)}16%{transform:translate(1.5px,1.5px) rotate(.5deg)}18%{transform:translate(.5px,2.5px) rotate(1.5deg)}20%{transform:translate(1.5px,-1.5px) rotate(-.5deg)}22%{transform:translate(.5px,1.5px) rotate(1.5deg)}24%{transform:translate(-.5px,1.5px) rotate(.5deg)}26%{transform:translate(-1.5px,-1.5px) rotate(.5deg)}28%{transform:translate(1.5px,2.5px) rotate(1.5deg)}30%{transform:translate(2.5px,-1.5px) rotate(1.5deg)}32%{transform:translate(1.5px,1.5px) rotate(1.5deg)}34%{transform:translate(2.5px,.5px) rotate(-.5deg)}36%{transform:translate(2.5px,-.5px) rotate(-.5deg)}38%{transform:translate(.5px,.5px) rotate(.5deg)}40%{transform:translate(1.5px,-1.5px) rotate(1.5deg)}42%{transform:translate(.5px,-.5px) rotate(.5deg)}44%{transform:translate(-.5px,-.5px) rotate(-.5deg)}46%{transform:translate(1.5px,2.5px) rotate(-.5deg)}48%{transform:translate(2.5px,2.5px) rotate(1.5deg)}50%{transform:translate(.5px,2.5px) rotate(1.5deg)}52%{transform:translate(1.5px,-1.5px) rotate(1.5deg)}54%{transform:translate(.5px,.5px) rotate(1.5deg)}56%{transform:translate(1.5px,1.5px) rotate(.5deg)}58%{transform:translate(.5px,.5px) rotate(1.5deg)}60%{transform:translate(-.5px,.5px) rotate(-.5deg)}62%{transform:translate(2.5px,-1.5px) rotate(1.5deg)}64%{transform:translate(2.5px,-.5px) rotate(.5deg)}66%{transform:translate(.5px,.5px) rotate(1.5deg)}68%{transform:translate(-1.5px,-.5px) rotate(.5deg)}70%{transform:translate(2.5px,.5px) rotate(-.5deg)}72%{transform:translate(1.5px,.5px) rotate(1.5deg)}74%{transform:translate(.5px,.5px) rotate(1.5deg)}76%{transform:translate(-1.5px,-.5px) rotate(.5deg)}78%{transform:translate(-1.5px,-1.5px) rotate(-.5deg)}80%{transform:translate(-.5px,-.5px) rotate(.5deg)}82%{transform:translate(-.5px,1.5px) rotate(1.5deg)}84%{transform:translate(-1.5px,2.5px) rotate(-.5deg)}86%{transform:translate(-1.5px,-.5px) rotate(-.5deg)}88%{transform:translate(2.5px,-.5px) rotate(-.5deg)}90%{transform:translate(2.5px,-1.5px) rotate(-.5deg)}92%{transform:translate(2.5px,.5px) rotate(-.5deg)}94%{transform:translate(.5px,1.5px) rotate(-.5deg)}96%{transform:translate(1.5px,2.5px) rotate(.5deg)}98%{transform:translate(2.5px,-.5px) rotate(1.5deg)}0%,100%{transform:translate(0,0) rotate(0)}
+}
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
 }
 .btnFloor .btnMain{display: inline-block;width:60px;height:60px;font-size: 0;padding:0;border:none;background: none;text-align: center;cursor: pointer;position: fixed;right:40px;bottom:40px;z-index: 997;}
 .btnFloor a.btnMain{bottom:110px;}
@@ -87,7 +120,7 @@ body{width:100%;height:100%;}
 #allMenu .company-info .copy{font-size: 18px;}
 /* footer */
 #footer{background: #000;}
-#footer .inner-02{padding:180px 0 175px;display: flex;flex-wrap: wrap;justify-content: space-around;}
+#footer .inner-02{padding:95px 0 100px;display: flex;flex-wrap: wrap;justify-content: space-around;}
 #footer h6{font-size:20px;text-align: center;font-weight: 700;}
 #footer .profile{width:240px;}
 #footer .profile .company-dw-btn{display: block;text-align: center;margin-top: 35px;}

@@ -95,7 +95,10 @@ article{width:100%;}
 }
 .info-prov label span {font-weight: bold;color: #38B8EF;}
 /* business */
+.business{height:100%;}
 .business .content .inner-02{padding:300px 0 100px;}
+.content.reason{height:100%;background: url('../images/content/business_bg.png') no-repeat 50% 0; background-size: cover;position: relative;z-index: 2;}
+.reasonUl{display: flex;flex-wrap: wrap;justify-content: space-between;}
 .businessUl{display: flex;flex-wrap: wrap;}
 .businessUl > li{width:33.3333%;padding:0 50px 60px 0;border-right:1px solid rgba(112,112,112,0.4);border-bottom:1px solid rgba(112,112,112,0.4);}
 .businessUl > li:nth-child(n+4){padding:70px 50px 0 0;border-bottom:none;}

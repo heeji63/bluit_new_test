@@ -40,7 +40,7 @@
   .section1 .swiper-button-next{bottom:40px;}
   .workWrap{margin-bottom: 50px;margin: 0 0 30px -10px;}
   .workWrap li{width: calc(33.3333% - 20px);}
-  .section4 .title{width:100%;}
+  .section5 .title{width:100%;}
   .contactBox{width:100%;}
   .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 95% 50%;}
   /* company */
@@ -111,10 +111,11 @@
   .workWrap li:nth-child(n+3){display: none;}
   .workWrap .infoTxt h4{font-size:28px;}
   .workWrap .infoTxt .disc br{display: block;}
-  .section3 .partnerBox{display: none;}
-  .section3 .inner-02{padding-bottom:0;}
-  .section3 .loop-wrap{display: block;}
-  .section4 .title p.disc{font-size: 18px;}
+  #sec3{display: none;}
+  .section4 .partnerBox{display: none;}
+  .section4 .inner-02{padding-bottom:0;}
+  .section4 .loop-wrap{display: block;}
+  .section5 .title p.disc{font-size: 18px;}
   /* company */
   .companyWrap .companyInfo .infoTr li:first-child{width:160px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 160px);}
@@ -156,9 +157,9 @@
   /* main */
   .section1 .portfolioTxt{bottom:120px;}
   .workWrap .infoTxt .disc br{display: none;word-break: keep-all;}
-  .section4 .title .inquiry-num{justify-content: space-between;}
-  .section4 .title .inquiry-num li{width:50%;}
-  .section4 .title .inquiry-num li:last-child{margin-left: 0;text-align: right;}
+  .section5 .title .inquiry-num{justify-content: space-between;}
+  .section5 .title .inquiry-num li{width:50%;}
+  .section5 .title .inquiry-num li:last-child{margin-left: 0;text-align: right;}
   /* company */
   .companyWrap .companyInfo .infoTr li:first-child{width:130px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 130px);}
@@ -174,8 +175,8 @@
   .btnFloor .btnMain img{width:75px;margin: -8px 0 0 -12px;}
   .btnFloor a.btnMain{bottom:85px;}
   /* main */
-  .section4 .title .inquiry-num li span{font-size: 18px;}
-  .section4 .title .inquiry-num li h3{font-size: 45px;}
+  .section5 .title .inquiry-num li span{font-size: 18px;}
+  .section5 .title .inquiry-num li h3{font-size: 45px;}
   .contactBox h5{font-size: 14px;}
   .contactBox .essentialUl li input{padding: 11px 15px 10px;}
   .contactBox .essentialUl li select{padding:12px 15px 11px;}
@@ -210,17 +211,17 @@
   #header #allMenuBtn.close:hover .btn-line.short{top:18px;}
   /* main */
   .main-cont .inner-02{padding: 50px 0 80px;}
-  .section3 .inner-02{padding-bottom: 0;}
+  .section4 .inner-02{padding-bottom: 0;}
   .workWrap{margin-bottom: 30px;}
   .workWrap .infoTxt .verticalCenter{padding: 0 20px;}
   .workWrap .infoTxt h4{font-size: 18px;word-break: keep-all;}
   .workWrap .infoTxt .dev_lang{font-size: 14px;}
   .workWrap .infoTxt .disc{font-size: 14px;}
   .workWrap .infoTxt span{font-size: 30px;}
-  .section4 .title p.disc{font-size: 16px;margin: 30px 0 120px;}
-  .section4 .title .disc::after{bottom:-70px;}
-  .section4 .title .inquiry-num li span{font-size: 16px;}
-  .section4 .title .inquiry-num li h3{font-size: 40px;}
+  .section5 .title p.disc{font-size: 16px;margin: 30px 0 120px;}
+  .section5 .title .disc::after{bottom:-70px;}
+  .section5 .title .inquiry-num li span{font-size: 16px;}
+  .section5 .title .inquiry-num li h3{font-size: 40px;}
   /* company */
   .companyWrap .companyInfo .infoTr li:first-child{width:100px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 100px);}
@@ -237,10 +238,10 @@
 @media screen and (max-width:350px){
   /* common */
   .title h2{font-size: 24px;}
-  .section4 .title p.disc{font-size: 14px;}
+  .section5 .title p.disc{font-size: 14px;}
   .btn{width:100%;padding:25px;font-size: 16px;}
   /* main */
-  .section4 .title .inquiry-num li h3{font-size: 30px;}
+  .section5 .title .inquiry-num li h3{font-size: 30px;}
   /* company */
   .companyWrap .companyInfo .infoTr{margin-bottom: 15px;}
   .companyWrap .companyInfo .infoTr li{font-size: 14px;}
