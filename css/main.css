@@ -114,6 +114,7 @@
 .contactBox .essentialUl li:nth-child(n+3){margin-top:14px;}
 .contactBox .essentialUl li input{display: block;width: 100%;border:1px solid rgba(255,255,255,0.6);font-size: 14px;background: none;box-sizing: border-box;color:#fff;padding:13px 20px 12px;font-weight: 600;}
 .contactBox .essentialUl li input::placeholder{color:#fff;}
+.contactBox .essentialUl li input:focus::placeholder{color:#38B8EF;}
 .contactBox .essentialUl li select{display: block;width: 100%;border: 1px solid rgba(255,255,255,0.6);font-size: 14px;background:url('../images/main/ic_select.png') no-repeat 93% 50%;-webkit-appearance: none;cursor: pointer;box-sizing: border-box;color:#fff;padding:14px 20px 13px;font-weight: 600;}
 .contactBox .essentialUl li select option{background: #0E172B;}
 .contactBox .choice{margin-top:45px;}
@@ -123,8 +124,10 @@
 .contactBox .choiceUl li:nth-child(4){width:100%;margin-top: 14px;}
 .contactBox .choiceUl li input{display: block;width: 100%;border:1px solid rgba(247,247,247,0.6);font-size: 14px;background: none;box-sizing: border-box;color:#fff;padding:13px 20px 12px;font-weight: 600;}
 .contactBox .choiceUl li input::placeholder{color:#fff;}
+.contactBox .choiceUl li input:focus::placeholder{color:#38B8EF;}
 .contactBox .choiceUl li textarea{width:100%;resize: none;box-sizing: border-box;border:1px solid rgba(247,247,247,0.6);background: none; color:#fff;padding:12px 20px;font-size: 14px;font-weight: 600;-ms-overflow-style: none; /* IE and Edge */scrollbar-width: none; /* Firefox */}
 .contactBox .choiceUl li textarea::placeholder{color:#fff;}
+.contactBox .choiceUl li textarea:focus::placeholder{color:#38B8EF;}
 .contactBox .choiceUl li textarea::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera */}
 .contactBox .file-box input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip:rect(0,0,0,0); border: 0; }
 .contactBox .file-box label { display: block; width:100%; padding: 13px 20px 12px 20px; font-size: inherit; font-family: inherit; line-height: normal; vertical-align: middle;background: none; font-size: 14px; color:#fff; border: 1px solid rgba(247,247,247,0.6); position: relative; cursor: pointer;font-weight: 600;}
