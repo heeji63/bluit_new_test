@@ -133,7 +133,9 @@ article{width:100%;}
 .company{height:100%;}
 .company .content.who{height:100%;}
 .company .content .bluit{position: relative;}
-.company .content .bluit,.company .content .bluit .inner-02{height:100%;}
+/* .company .content.who .bluit{height:900px;} */
+.company .content .bluit .inner-02{height:100%;}
+.animationWrap{height:200px;position: relative;top:-600px;}
 .company .content .title h2 br.m{display: none;}
 .company .content .title .sub br{display: block;}
 /*  .companyInfo .infoTr{display: flex;flex-wrap: wrap;margin-bottom: 20px;}
@@ -149,11 +151,16 @@ article{width:100%;}
 .content.on .companyUl li{opacity: 1;top:0;}
 .companyUl li .txt h3{font-size: 55px;font-weight: 600;margin: 20px 0;}
 .companyUl li .txt span{font-size: 18px;}
-.bluit-logo{text-align: center;}
+.bluit-logo{text-align: center;opacity: 0;position: relative;top:-20px;transition: opacity 0.3s ease, top 0.3s ease;}
+.content.on .bluit-logo{opacity: 1;top:0;}
 .bluit-logo img{width:51%;max-width: 817px;}
-.bluit_disc{font-size: 22px;line-height: 1.5;text-align: center;margin-top: 100px;}
-.bluit .bluitBgTop{max-width: 2300px;width:100%;padding: 6.5% 0;background: url('../images/content/bg_bluit_top.png') no-repeat left top;background-size: cover;mix-blend-mode: overlay;position: absolute;bottom:36vh;left:0;}
-.bluit .bluitBgBottom{max-width: 2300px;width:100%;padding: 6.7% 0;background: url('../images/content/bg_bluit_bottom.png') no-repeat left top;background-size: cover;mix-blend-mode: overlay;position: absolute;bottom:7vh;right:0;}
+.bluit_disc{font-size: 22px;line-height: 1.5;text-align: center;margin-top: 100px;opacity: 0;position: relative;top:-20px;transition: opacity 0.5s ease, top 0.5s ease;transition-delay: 0.3s;}
+.content.on .bluit_disc{opacity: 1;top:0;}
+.animate_02 {position: sticky;top: 34.5vh;opacity: 0;font-size: 40px;width: 100%;height: 90px;text-align: center;}
+.animate_03{position: sticky;top:65vh;opacity: 0;font-size: 40px;width: 100%;height: 90px;text-align: center;}
+.trigger {width: 100%;height: 10px;margin-bottom: 90px;}
+.bluit .bluitBgTop{max-width: 2300px;min-width:790px;width:100%;padding: 6.5% 0;background: url('../images/content/bg_bluit_top.png') no-repeat left top;background-size: cover;mix-blend-mode: overlay;position: absolute;left:0;}
+.bluit .bluitBgBottom{max-width: 2300px;min-width:790px;width:116%;padding: 6.7% 0;background: url('../images/content/bg_bluit_bottom.png') no-repeat left top;background-size: cover;mix-blend-mode: overlay;position: absolute;right:0;}
 .organization{display: flex;flex-wrap: wrap;justify-content: flex-end;background: url("../images/content/organization_box.png") no-repeat 50% 50%;background-size: contain;padding: 14% 0 13%;opacity: 0;transform: scale(0.7);transition: opacity 0.5s ease, transform 0.5s ease;transition-delay: 0.3s;}
 .content.on .organization{opacity: 1;transform: scale(1);}
 .organizationUl{display: flex;flex-wrap: wrap;justify-content: space-around;width:50%;margin-right: 70px;}

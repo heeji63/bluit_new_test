@@ -5,9 +5,6 @@
   .section1 .portfolioTxt{bottom:180px;}
   .section1 .swiper-button-prev{bottom:60px;}
   .section1 .swiper-button-next{bottom:60px;}
-  /* company */
-  .bluit .bluitBgTop{bottom: 42vh;}
-  .bluit .bluitBgBottom{bottom: 16vh;}
 }
 @media screen and (max-width:1400px) {
   /* main */
@@ -24,8 +21,7 @@
   .partnerBox .partnerUl li{width:25%;}
   .partnerBox .partnerUl li img{width:85%;}
   /* company */
-  .bluit .bluitBgTop{bottom: 47vh;}
-  .bluit .bluitBgBottom{bottom: 24vh;}
+  .bluit .bluitBgBottom{top:60vh;}
   .organization{padding: 11vw 0 11vw;}
   .organizationUl > li h6{font-size: 25px;margin-bottom: 20px;}
   .organizationUl > li > ul > li{font-size: 18px;margin-bottom: 15px;}
@@ -52,8 +48,7 @@
   .contactBox{width:100%;}
   .contactBox .essentialUl li select{background:url('../images/main/ic_select.png') no-repeat 95% 50%;}
   /* company */
-  .bluit .bluitBgTop{bottom: 50vh;}
-  .bluit .bluitBgBottom{bottom: 30vh;}
+  .bluit .bluitBgBottom{top:52vh;}
   .organizationUl{margin-right: 60px;}
   .organizationUl > li h6{font-size: 20px;}
   .organizationUl > li > ul > li{font-size: 16px;}
@@ -82,8 +77,9 @@
   .workWrap .infoTxt .disc{font-size: 16px;}
   .workWrap .infoTxt span{font-size: 40px;}
   /* company */
-  .bluit .bluitBgTop{padding: 8% 0;mix-blend-mode:soft-light;}
-  .bluit .bluitBgBottom{padding: 8.2% 0;background-position: 40% top;mix-blend-mode:soft-light;}
+  .animationWrap{top:-500px;}
+  .bluit .bluitBgTop{padding: 8% 0;mix-blend-mode:soft-light;top:25.5vh;}
+  .bluit .bluitBgBottom{padding: 8.2% 0;background-position: 40% top;mix-blend-mode:soft-light;top:45vh;}
   .companyUl li .txt h3{font-size: 45px;}
   .companyUl li .txt span{font-size: 16px;}
   .bluit_disc{font-size: 18px;}
@@ -143,8 +139,8 @@
   .section4 .loop-wrap{display: block;}
   .section5 .title p.disc{font-size: 18px;}
   /* company */
-  .bluit .bluitBgTop{bottom:60vh;}
-  .bluit .bluitBgBottom{bottom:45vh;}
+  .bluit .bluitBgTop{top:30vh;}
+  .bluit .bluitBgBottom{top:45vh;}
   .company .content .title h2 br.m{display: block;}
   .title p.sub.big{font-size: 20px;}
   .companyWrap{width:100%;}
@@ -196,8 +192,6 @@
   .businessUl > li:nth-child(3n+4){padding-bottom: 25px;}
   .businessUl > li:nth-child(2n){padding-left:25px;padding-right: 0;}
   /* company */
-  .bluit .bluitBgTop{bottom:42vh;}
-  .bluit .bluitBgBottom{bottom:30vh;}
   .companyUl li{width:33.3333%;}
   .companyUl li .ic img{width:45px;}
   .companyUl li .txt h3{font-size: 38px;}
@@ -218,6 +212,7 @@
   .section5 .title .inquiry-num li{width:50%;}
   .section5 .title .inquiry-num li:last-child{margin-left: 0;text-align: right;}
   /* company */
+  .bluit .bluitBgBottom{background-position: left top;}
   .companyWrap{margin: 80px 0;}
   .companyUl li{width:50%;margin-top: 20px;}
   .companyUl li:first-child{width:100%;margin-top: 0;}
@@ -285,7 +280,6 @@
   .section5 .title .inquiry-num li span{font-size: 16px;}
   .section5 .title .inquiry-num li h3{font-size: 40px;}
   /* company */
-  .bluit .bluitBgBottom{bottom:33vh;}
   .bluit-logo img{width:100%;}
   .companyWrap .companyInfo .infoTr li:first-child{width:100px;}
   .companyWrap .companyInfo .infoTr li:last-child{width:calc(100% - 100px);}
@@ -303,8 +297,6 @@
   .reasonBox .swiper-button-prev, .reasonBox .swiper-button-next{display: none;}
   .processWrap{width:100%;}
   .processBox .swiper-button-prev, .processBox .swiper-button-next{display: none;}
-  .bluit .bluitBgTop{bottom:20vh;}
-  .bluit .bluitBgBottom{bottom:7vh;}
 }
 @media screen and (max-width:350px){
   /* common */
